@@ -113,5 +113,8 @@ input:focus {
     .form-control textarea {
         width: 100%;
     }
+    .textarea-control {
+        grid-column: 1 / span 1;
+    }
 
 }

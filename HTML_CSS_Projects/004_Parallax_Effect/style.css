@@ -1,0 +1,74 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.pimg1 {
+    background-image: url(/HTML_CSS_Projects/004_Parallax_Effect/images/img001.jpg);
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url(/HTML_CSS_Projects/004_Parallax_Effect/images/img002.jpg);
+    min-height: 80%;
+}
+
+.pimg3 {
+    background-image: url(/HTML_CSS_Projects/004_Parallax_Effect/images/img003.jpg);
+    min-height: 80%;
+}
+
+.pimg4 {
+    background-image: url(/HTML_CSS_Projects/004_Parallax_Effect/images/img004.jpg);
+    min-height: 80%;
+}
+
+.pimg1,
+.pimg2,
+.pimg3, .pimg4 {
+    position: relative;
+    background-positNatureion: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.ptext p{ 
+    background-color: aqua;
+    color: black;
+    font-size: 75px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.section-1{
+    background-color: aqua;
+    color: black;
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.section-1 h2, .section-2 h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.section-1 p, .section-2 p{
+    font-size: 20px;
+}
+
+.section-2{
+    background-color: black;
+    color: aqua;
+    padding: 50px 80px;
+    text-align: center;
+}
