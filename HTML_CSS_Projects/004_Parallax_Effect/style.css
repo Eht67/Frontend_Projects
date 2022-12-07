@@ -9,22 +9,22 @@ body {
 }
 
 .pimg1 {
-    background-image: url(/HTML_CSS_Projects/004_Parallax_Effect/images/img001.jpg);
+    background-image: url(images/img001.jpg);
     min-height: 100%;
 }
 
 .pimg2 {
-    background-image: url(/HTML_CSS_Projects/004_Parallax_Effect/images/img002.jpg);
+    background-image: url(images/img002.jpg);
     min-height: 80%;
 }
 
 .pimg3 {
-    background-image: url(/HTML_CSS_Projects/004_Parallax_Effect/images/img003.jpg);
+    background-image: url(images/img003.jpg);
     min-height: 80%;
 }
 
 .pimg4 {
-    background-image: url(/HTML_CSS_Projects/004_Parallax_Effect/images/img004.jpg);
+    background-image: url(images/img004.jpg);
     min-height: 80%;
 }
 
@@ -32,7 +32,7 @@ body {
 .pimg2,
 .pimg3, .pimg4 {
     position: relative;
-    background-positNatureion: center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
