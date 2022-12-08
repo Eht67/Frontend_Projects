@@ -87,9 +87,12 @@ nav ul li a:hover {
     width: 90vw;
     height: 350px;
     border-radius: 22px;
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 15px;
     box-shadow: 0 0 20px rgba(1, 0, 0, 0.3);
     overflow-x: scroll;
 }
@@ -103,6 +106,7 @@ nav ul li a:hover {
     user-select: none;
     cursor: pointer;
     color: var(--sec-color);
+    margin: 15px 8px;
 }
 
 .product:hover {
