@@ -91,12 +91,13 @@ nav ul li a:hover {
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 0 20px rgba(1, 0, 0, 0.3);
+    overflow-x: scroll;
 }
 
 .product {
     background-color: var(--sec-color);
-    width: 18.5%;
-    height: 90%;
+    width: 320px;
+    height: 320px;
     border-radius: 22px;
     font-size: 5em;
     user-select: none;

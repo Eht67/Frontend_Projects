@@ -6,3 +6,14 @@
         margin: 12px 17px;
     }
 }
+
+@media (max-width:414px){
+    #search-button{
+        margin: 10px;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
