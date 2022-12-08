@@ -85,7 +85,7 @@ nav ul li a:hover {
 .card {
     background-color: white;
     width: 90vw;
-    height: 350px;
+    height: 370px;
     border-radius: 22px;
     /* display: flex;
     justify-content: space-evenly;
@@ -105,7 +105,7 @@ nav ul li a:hover {
     user-select: none;
     cursor: pointer;
     color: var(--sec-color);
-    margin: 15px 0 0 11px;
+    margin: 25px 0 0 11px;
 }
 
 .product:hover {
