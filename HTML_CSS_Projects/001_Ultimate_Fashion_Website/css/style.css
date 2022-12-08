@@ -82,7 +82,7 @@ nav ul li a:hover {
     grid-template-rows: auto auto auto auto auto;
 }
 
-.card {10px
+.card {
     background-color: white;
     width: 90vw;
     height: 350px;
@@ -92,7 +92,6 @@ nav ul li a:hover {
     align-items: center; */
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    justify-content: start;
     box-shadow: 0 0 20px rgba(1, 0, 0, 0.3);
     overflow-x: scroll;
 }
