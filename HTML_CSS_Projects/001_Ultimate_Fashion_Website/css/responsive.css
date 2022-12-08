@@ -8,6 +8,15 @@
     .container{
         padding-top: 189px;
     }
+    .card{
+        height: 222px;
+    }
+    .product{
+        width: 200px;
+        height: 200px;
+        font-size: 45px;
+        margin: 10px 0 0 10px;
+    }
 }
 
 @media (max-width:414px){
@@ -21,5 +30,14 @@
     }
     .container{
         padding-top: 245px;
+    }
+    .card{
+        height: 150px;
+    }
+    .product{
+        height: 140px;
+        width: 140px;
+        margin: 5px 0 0 5px;
+        font-size: 32px;
     }
 }
