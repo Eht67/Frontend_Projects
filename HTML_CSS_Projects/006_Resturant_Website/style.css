@@ -180,3 +180,54 @@ hr {
     font-size: 36px;
     margin: 0 0 20px;
 }
+
+.grid{
+    margin: 20px 20px 100px 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "i1 i1 i2 i3"
+    "i1 i1 i2 i7"
+    "i4 i5 i6 i7";
+}
+
+.grid-images{
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-images:hover{
+    scale: 1.05;
+}
+
+/* grid area items */
+
+.grid-item-1{
+    grid-area: i1;
+}
+
+.grid-item-2{
+    grid-area: i2;
+}
+
+.grid-item-3{
+    grid-area: i3;
+}
+
+.grid-item-4{
+    grid-area: i4;
+}
+
+.grid-item-5{
+    grid-area: i5;
+}
+
+.grid-item-6{
+    grid-area: i6;
+}
+
+.grid-item-7{
+    grid-area: i7;
+}
