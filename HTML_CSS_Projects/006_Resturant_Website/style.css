@@ -181,60 +181,99 @@ hr {
     margin: 0 0 20px;
 }
 
-.grid{
+.grid {
     margin: 20px 20px 100px 20px;
     display: grid;
     gap: 20px;
-    grid-template-areas: 
-    "i1 i1 i2 i3"
-    "i1 i1 i2 i7"
-    "i4 i5 i6 i7";
+    grid-template-areas:
+        "i1 i1 i2 i3"
+        "i1 i1 i2 i7"
+        "i4 i5 i6 i7";
 }
 
-.grid-images{
+.grid-images {
     border-radius: 12px;
     transition: 0.3s ease-in-out;
     width: 100%;
     height: 100%;
 }
 
-.grid-images:hover{
+.grid-images:hover {
     scale: 1.05;
 }
 
 /* grid area items */
 
-.grid-item-1{
+.grid-item-1 {
     grid-area: i1;
 }
 
-.grid-item-2{
+.grid-item-2 {
     grid-area: i2;
 }
 
-.grid-item-3{
+.grid-item-3 {
     grid-area: i3;
 }
 
-.grid-item-4{
+.grid-item-4 {
     grid-area: i4;
 }
 
-.grid-item-5{
+.grid-item-5 {
     grid-area: i5;
 }
 
-.grid-item-6{
+.grid-item-6 {
     grid-area: i6;
 }
 
-.grid-item-7{
+.grid-item-7 {
     grid-area: i7;
 }
 
 /* footer */
 
-footer{
+footer {
     background-color: #FCBF49;
     color: #003049;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-container h3,
+.footer-container ul,
+.footer-container input,
+.footer-container ul li {
+    margin: 10px 0;
+}
+
+.footer-container input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.footer-container svg {
+    width: 12%;
+    margin-top: -22px;
+}
+
+.footer-container h3,
+.footer-container ul,
+.footer-container ul li {
+    user-select: none;
+}
+
+.footer-container ul li,
+.footer-container svg{
+    cursor: pointer;
 }
