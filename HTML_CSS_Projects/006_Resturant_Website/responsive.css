@@ -1,0 +1,14 @@
+@media (max-width:1280px) {
+    .footer-container,
+    .hero-section{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero-content{
+        padding: 0;
+        width: 100%;
+    }
+    .hero-img img{
+        width: 100%;
+    }
+}

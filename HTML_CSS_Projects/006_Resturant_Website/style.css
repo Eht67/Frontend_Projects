@@ -242,7 +242,7 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 50px 0 30px 0;
 }
 
 .footer-container ul {
@@ -259,12 +259,11 @@ footer {
 .footer-container input {
     padding: 5px 10px;
     border-radius: 5px;
-    width: 70%;
+    width: 100%;
 }
 
 .footer-container svg {
-    width: 12%;
-    margin-top: -22px;
+    width: 50px;
 }
 
 .footer-container h3,
@@ -276,4 +275,8 @@ footer {
 .footer-container ul li,
 .footer-container svg{
     cursor: pointer;
+}
+
+.footer-container a{
+    text-decoration: none;
 }
