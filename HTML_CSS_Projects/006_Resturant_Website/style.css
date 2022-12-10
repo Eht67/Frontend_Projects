@@ -28,7 +28,7 @@ header{
 }
 
 .menu-icon svg{
-    width: 55%;
+    width: 40%;
     transition: 0.3s ease-in-out;
 }
 
@@ -73,7 +73,7 @@ header{
 
 .discount:hover, .explore:hover{
     background-color: #FCBF49;
-    color: #D62828;
+    color: #F77F00;
 }
 
 .hero-content h1{
@@ -84,4 +84,12 @@ header{
 
 .hero-content p{
     font-size: 20px;
+}
+
+.icons-section{
+    background-color: #FCBF49;
+    width: 65vw;
+    height: 150px;
+    margin: 100px auto;
+    border-radius: 20px;
 }
