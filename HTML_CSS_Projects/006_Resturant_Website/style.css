@@ -92,4 +92,12 @@ header{
     height: 150px;
     margin: 100px auto;
     border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.icon-box{
+    width: 20px;
+    height: 20px;
+    background-color: white;
 }
