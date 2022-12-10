@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    background-color: #EAE2B7;
+}
+
+header{
+    background-color: #FCBF49;
+    position: sticky;
+    z-index: 3;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-icon, .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+
+.menu-icon svg{
+    width: 55%;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-icon svg:hover{
+    fill: #d62828;
+}
+
+.container{
+    max-width: 88vw;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.hero-section{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 3% 5%;
+}
+
+.hero-img img:hover{
+    scale: 1.1;
+}
+
+.discount, .explore{
+    background-color: #D62828;
+    color: white;
+    align-self: flex-start;
+    padding: 12px 16px;
+    border-radius: 5px;
+    margin: 16px 0;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.discount:hover, .explore:hover{
+    background-color: #FCBF49;
+    color: #D62828;
+}
+
+.hero-content h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+.hero-content p{
+    font-size: 20px;
+}
