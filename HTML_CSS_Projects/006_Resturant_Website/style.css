@@ -39,7 +39,7 @@ header {
 }
 
 .container {
-    max-width: 88vw;
+    max-width: 79vw;
     margin: 0 auto;
     background-color: transparent;
 }
@@ -47,7 +47,7 @@ header {
 .hero-section {
     display: flex;
     margin-top: 60px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .hero-content {
@@ -55,7 +55,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     width: 50%;
-    padding: 3% 5%;
+    padding: 3.5% 5%;
 }
 
 .hero-img img {
@@ -230,4 +230,11 @@ hr {
 
 .grid-item-7{
     grid-area: i7;
+}
+
+/* footer */
+
+footer{
+    background-color: #FCBF49;
+    color: #003049;
 }
