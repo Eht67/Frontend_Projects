@@ -264,6 +264,10 @@ footer {
 
 .footer-container svg {
     width: 50px;
+    fill: #003049;
+    position: relative;
+    top: -20px;
+    transition: 0.2s ease-in-out;
 }
 
 .footer-container h3,
@@ -273,10 +277,35 @@ footer {
 }
 
 .footer-container ul li,
-.footer-container svg{
+.footer-container svg {
     cursor: pointer;
 }
 
-.footer-container a{
+.footer-container a {
     text-decoration: none;
+}
+
+#facebook-icon:hover{
+    fill: #1771e6;
+}
+
+#twitter-icon:hover {
+    fill: #1c99e6;
+}
+
+#insta-icon:hover{
+    fill: #b420a1;
+}
+
+#youtube-icon:hover{
+    fill: red;
+}
+
+#fiverr-icon{
+    width: 58%;
+    fill: #003049;
+}
+
+#fiverr-icon:hover{
+    fill: #1dbf73;
 }
