@@ -1,0 +1,17 @@
+a{
+    display: block;
+    text-decoration: none;
+}
+h2 a{
+    display: inline;
+}
+body{
+    font-size: 24px;
+    width: 80vw;
+    margin: auto;
+}
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 153);
+    user-select: none;
+}
