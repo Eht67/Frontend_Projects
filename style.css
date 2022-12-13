@@ -15,7 +15,7 @@
     --txt-color: white;
     --yellow: #FEC601;
     --btn-color: #EA7317;
-
+    --hover-color: rgba(255, 255, 255, 0.25);
 }
 
 html {
@@ -41,15 +41,24 @@ body {
 }
 
 .hero-image {
-    width: 70rem;
-    height: 70rem;
+    width: 38vw;
+    height: 38vw;
     border-radius: 7vw;
     overflow: hidden;
+    border-top: 0.5rem solid var(--btn-color);
+    border-left: 0.5rem solid var(--btn-color);
+    border-right: 0.5rem solid var(--btn-color);
+    margin: 3rem 0;
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.hero-image img:hover{
+    scale: 1.07;
 }
 
 .intro h1 {
@@ -86,9 +95,10 @@ body {
     margin: 0 2.4rem 0 0;
     transition: 0.3s ease-in-out;
     font-family: 'Times New Roman', Times, serif;
+    width: 17rem;
 }
 
 .b-button:hover {
-    background-color: var(--txt-color);
-    color: var(--btn-color);
+    background-color: var(--hover-color);
+    color: var(--yellow);
 }
