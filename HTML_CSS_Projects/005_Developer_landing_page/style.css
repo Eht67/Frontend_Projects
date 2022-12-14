@@ -7,6 +7,10 @@
     line-height: 1.4;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 .hero_section {
     background-image: url(images/developer.jpeg);
     min-height: 100vh;
@@ -14,7 +18,7 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 5rem;
     background-position: center center;
 }
 
@@ -23,32 +27,32 @@
 }
 
 .text-container h2 {
-    font-size: 50px;
+    font-size: 5rem;
 }
 
 .text-container h2 span,
 .text-container h1 {
-    font-size: 80px;
+    font-size: 8rem;
 }
 
 .black-box {
-    height: 300px;
+    height: fit-content;
     background-color: black;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 .black-box span {
-    font-size: 100px;
+    font-size: 10rem;
 }
 
 .work {
     display: flex;
     justify-content: space-evenly;
-    padding: 50px 0px;
+    padding: 5rem 0px;
     background-color: lightblue;
     flex-wrap: wrap;
 }
@@ -75,21 +79,26 @@
 
 .card-content {
     margin: 20px 12px;
+    font-size: 17px;
 }
 
 .bottom-section {
     display: flex;
     background-color: lightblue;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact,
 .about {
+    width: 60rem;
     background-color: navy;
     color: white;
-    margin: 51px;
+    margin: 5.1rem;
     border-radius: 12px;
-    padding: 20px;
-    font-size: 20px;
+    padding: 2rem;
+    font-size: 2rem;
     text-align: center;
     transition: 0.3s ease-in-out;
 }
@@ -103,86 +112,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 5rem;
+    font-size: 2rem;
     background-color: black;
     color: white;
-}
-
-@media (max-width: 1216px) {
-    .bottom-section{
-        flex-wrap: wrap;
-    }
-    .black-box{
-        font-size: 30px;
-        height: 250px;
-    }
-    .black-box span{
-        font-size: 70px;
-    }
-    .text-container h2 {
-        font-size: 30px;
-    }
-    
-    .text-container h2 span,
-    .text-container h1 {
-        font-size: 70px;
-    }
-
-}
-
-@media (max-width: 922px) {
-    .black-box{
-        font-size: 25px;
-        height: 200px;
-    }
-    .black-box span{
-        font-size: 60px;
-    }
-    .text-container h2 {
-        font-size: 25px;
-    }
-    
-    .text-container h2 span,
-    .text-container h1 {
-        font-size: 60px;
-    }
-}
-
-@media (max-width: 770px) {
-    .black-box{
-        font-size: 22px;
-        height: 150px;
-    }
-    .black-box span{
-        font-size: 55px;
-    }
-    .text-container h2 {
-        font-size: 22px;
-    }
-    
-    .text-container h2 span,
-    .text-container h1 {
-        font-size: 55px;
-    }
-}
-
-@media (max-width: 526px) {
-    .black-box{
-        font-size: 20px;
-        height: 100px;
-    }
-    .black-box span{
-        font-size: 50px;
-    }
-    .text-container h2 {
-        font-size: 20px;
-    }
-    
-    .text-container h2 span,
-    .text-container h1 {
-        font-size: 50px;
-    }
-    .text-container{
-        padding-left: 12px;
-    }
 }
