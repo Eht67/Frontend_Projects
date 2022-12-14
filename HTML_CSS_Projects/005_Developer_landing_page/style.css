@@ -20,6 +20,7 @@ html{
     justify-content: center;
     padding-top: 5rem;
     background-position: center center;
+    padding: 1rem 3rem;
 }
 
 .text-container {
@@ -37,6 +38,7 @@ html{
 
 .black-box {
     height: fit-content;
+    padding: 1rem 3rem;
     background-color: black;
     color: white;
     display: flex;
