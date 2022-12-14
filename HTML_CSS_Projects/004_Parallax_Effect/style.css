@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
 html,
 body {
     height: 100%;
@@ -46,6 +53,11 @@ html {
     background-attachment: fixed;
 }
 
+.ptext p:hover{
+    background-color: black;
+    color: aqua;
+}
+
 .ptext p {
     background-color: aqua;
     max-width: 90vw;
@@ -65,13 +77,13 @@ html {
 
 .section-1 h2,
 .section-2 h2 {
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 500;
 }
 
 .section-1 p,
 .section-2 p {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .section-2 {
