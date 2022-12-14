@@ -57,6 +57,14 @@
     html{
         font-size: 36%;
     }
+    .social-icons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #facebook-icon, #instagram-icon{
+        margin: 2rem auto 0 auto;
+    }
 }
 
 @media (max-width:415px) {

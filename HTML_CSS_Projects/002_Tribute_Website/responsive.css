@@ -1,0 +1,43 @@
+@media (min-width:2400px) {
+    html{
+        font-size: 90%;
+    }
+}
+
+@media (min-width:3600px) {
+    html{
+        font-size: 125%;
+    }
+}
+
+@media (max-width:1120px) {
+    html{
+        font-size: 55%;
+    }
+    .top-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .image-container{
+        width: fit-content;
+        margin: 5rem auto -50rem auto;
+    }
+}
+
+@media (max-width:730px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width:600px) {
+    html{
+        font-size: 43%;
+    }
+}
+
+@media (max-width:500px) {
+    html{
+        font-size: 36%;
+    }
+}

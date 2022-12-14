@@ -1,70 +1,86 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --bg-color : rgb(86, 219, 86);
+:root {
+    --bg-color: rgb(86, 219, 86);
     --border-color: green;
 }
 
-.container{
+html {
+    font-size: 62.5%;
+}
+
+.container {
     min-height: 100vh;
-    border: 20px solid var(--border-color);
+    border: 2rem solid var(--border-color);
     background-color: var(--bg-color);
 }
 
-.top-section{
+.name,
+.bottom-section ul,
+.bottom-section p,
+.bottom-section h4{
+    padding: 0 5rem;
+}
+
+.top-section {
     display: flex;
     justify-content: space-around;
     width: 90vw;
 }
 
-.image-container{
-    margin: 100px 0 0 0;
-    border-radius: 300px;
+.image-container {
+    margin: 10rem 0 0 0;
+    border-radius: 30rem;
     overflow: hidden;
 }
 
-.name{
+.image-container img {
+    width: 44.9rem;
+    height: 59.9rem;
+}
+
+.name {
     display: flex;
     flex-direction: column;
-    margin-top: 569px;
+    margin-top: 56.9rem;
 }
 
-.name h1{
-    font-size: 60px;
+.name h1 {
+    font-size: 6rem;
     color: var(--border-color);
 }
 
-.name h4{
-    font-size: 22px;
+.name h4 {
+    font-size: 2.2rem;
     text-align: end;
 }
 
-.bottom-section{
+.bottom-section {
     width: 90vw;
-    margin: 100px auto;
+    margin: 10rem auto;
 }
 
-.bottom-section p{
-    font-size: 22px;
+.bottom-section p {
+    font-size: 2.2rem;
 }
 
-.bottom-section h4{
-    font-size: 36px;
-    margin: 50px 0 20px 0;
+.bottom-section h4 {
+    font-size: 3.6rem;
+    margin: 5rem 0 2rem 0;
     color: var(--border-color);
 }
 
-.bottom-section ul li{
+.bottom-section ul li {
     list-style: circle;
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
-#link-text{
+#link-text {
     text-align: end;
-    margin-top: 50px;
-    font-size: 24px;
+    margin-top: 5rem;
+    font-size: 2.4rem;
 }
