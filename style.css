@@ -6,6 +6,7 @@
     user-select: none;
     text-decoration: none;
     line-height: 1.4;
+    scroll-behavior: smooth;
 }
 
 /* colors */
@@ -13,7 +14,7 @@
     --main-bg-color: #2364AA;
     --sec-color: #3DA5D9;
     --txt-color: white;
-    --yellow: #FEC601;
+    --golden: #FEC601;
     --btn-color: #EA7317;
     --hover-color: rgba(255, 255, 255, 0.25);
 }
@@ -57,8 +58,9 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.hero-image img:hover{
+.hero-image img:hover {
     scale: 1.07;
+    transition: 0.3s ease-in-out;
 }
 
 .intro h1 {
@@ -67,7 +69,7 @@ body {
 }
 
 .hi-text {
-    color: var(--yellow);
+    color: var(--golden);
 }
 
 .i-am-text {
@@ -82,8 +84,9 @@ body {
 .hero-buttons {
     display: flex;
     justify-content: start;
-    width: 30vw;
+    width: 100%;
     padding: 2rem 0;
+    flex-wrap: wrap;
 }
 
 .b-button {
@@ -92,7 +95,7 @@ body {
     font-size: 2.5rem;
     border-radius: 1.2rem;
     padding: 1rem 2rem;
-    margin: 0 2.4rem 0 0;
+    margin: 1rem 2.4rem 1rem 0;
     transition: 0.3s ease-in-out;
     font-family: 'Times New Roman', Times, serif;
     width: 17rem;
@@ -100,5 +103,124 @@ body {
 
 .b-button:hover {
     background-color: var(--hover-color);
-    color: var(--yellow);
+    color: var(--golden);
+}
+
+hr {
+    height: 0.5rem;
+    color: var(--sec-color);
+    background-color: var(--sec-color);
+}
+
+.projects-container {
+    padding: 7vh 0;
+}
+
+.projects-heading {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: var(--sec-color);
+    border-radius: 1.2rem;
+    font-size: 6rem;
+    padding: 1rem 2rem;
+    color: var(--txt-color);
+    border: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.projects-heading:hover {
+    background-color: transparent;
+    color: var(--sec-color);
+    color: var(--golden);
+    border: 3px solid var(--golden);
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}
+
+.projects-card {
+    width: fit-content;
+    max-width: 90vw;
+    /* height: 500px; */
+    background-color: var(--sec-color);
+    margin: 4vh auto 0 auto;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    border: 2px solid transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    transition: 0.3s ease-in-out;
+}
+
+.projects-card:hover {
+    border: 2px solid var(--golden);
+    transition: 0.3s ease-in-out;
+}
+
+.project {
+    width: 320px;
+    height: 180px;
+    margin: 1rem;
+    border-radius: 1.2rem;
+    background-color: var(--txt-color);
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    border: 3px solid var(--sec-color);
+}
+
+.project:hover {
+    border: 3px solid var(--golden);
+    scale: 1.08;
+    background-color: var(--hover-color);
+    transition: 0.3s ease-in-out;
+}
+
+.project img {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--golden);
+}
+
+footer p {
+    font-size: 6rem;
+    margin: 3rem auto;
+}
+
+.social-icons {
+    width: fit-content;
+    margin: 0 auto 6rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-icons svg {
+    margin: 0 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#facebook-icon:hover {
+    fill: #1771e6;
+}
+
+#instagram-icon:hover {
+    fill: #b420a1;
+}
+
+#fiverr-icon:hover {
+    fill: #1dbf73;
+}
+
+#fiverr-icon {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 22px;
+
 }

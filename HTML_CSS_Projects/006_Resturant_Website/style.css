@@ -98,7 +98,8 @@ header {
 
 .icons-section {
     background-color: #FCBF49;
-    width: 65vw;
+    width: fit-content;
+    max-width: 65vw;
     /* height: 150px; */
     margin: 100px auto;
     border-radius: 20px;

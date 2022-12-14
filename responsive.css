@@ -1,0 +1,66 @@
+@media (min-width:2400px) {
+    html{
+        font-size: 90%;
+    }
+    .project{
+        width: 427px;
+        height: 240px;
+    }
+
+}
+
+@media (min-width:3600px) {
+    html{
+        font-size: 125%;
+    }
+    .project{
+        width: 640px;
+        height: 360px;
+    }
+}
+
+@media (max-width:1120) {
+    html{
+        font-size: 55%;
+    }
+    .hero-image{
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media (max-width:730px) {
+    html{
+        font-size: 50%;
+    }
+    .hero-image{
+        width: 50vw;
+        height: 50vw;
+    }
+    .b-button{
+        font-size: 3rem;
+        width: 20rem;
+    }
+}
+
+@media (max-width:600px) {
+    html{
+        font-size: 43%;
+    }
+    .hero-image{
+        width: 60vw;
+        height: 60vw;
+    }
+}
+
+@media (max-width:500px) {
+    html{
+        font-size: 36%;
+    }
+}
+
+@media (max-width:415px) {
+    .projects-heading{
+        font-size: 5rem;
+    }
+}
