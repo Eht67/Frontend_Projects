@@ -53,6 +53,17 @@
         background-color: black;
         color: white;
     }
+    #facebook-icon {
+        fill: #1771e6;
+    }
+    
+    #instagram-icon {
+        fill: #b420a1;
+    }
+    
+    #fiverr-icon {
+        fill: #1dbf73;
+    }
 }
 
 @media (max-width:1120) {
