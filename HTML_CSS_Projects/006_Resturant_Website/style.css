@@ -169,6 +169,7 @@ hr {
     cursor: pointer;
     user-select: none;
     transition: 0.3s ease-in-out;
+    border: 2px solid transparent;
 }
 
 .menu-button:hover {
