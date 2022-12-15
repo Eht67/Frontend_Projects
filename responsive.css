@@ -1,18 +1,22 @@
 @media (min-width:2400px) {
-    html{
+    html {
         font-size: 90%;
     }
-    .project{
+
+    .project {
         width: 427px;
         height: 240px;
     }
-    .project-name{
+
+    .project-name {
         font-size: 20px;
     }
-    .social-icons svg{
+
+    .social-icons svg {
         width: 130px;
         height: 130px;
     }
+
     #fiverr-icon {
         width: 200px;
         height: 200px;
@@ -22,20 +26,24 @@
 }
 
 @media (min-width:3600px) {
-    html{
+    html {
         font-size: 125%;
     }
-    .project{
+
+    .project {
         width: 640px;
         height: 360px;
     }
-    .project-name{
+
+    .project-name {
         font-size: 30px;
     }
-    .social-icons svg{
+
+    .social-icons svg {
         width: 200px;
         height: 200px;
     }
+
     #fiverr-icon {
         width: 300px;
         height: 300px;
@@ -45,77 +53,98 @@
 }
 
 @media (min-width:1000px) {
-    .project-name{
+    .project-name {
         background-color: transparent;
         color: transparent;
     }
-    .project:hover .project-name{
+
+    .project:hover .project-name {
         background-color: black;
         color: white;
     }
-}
 
-@media (max-width:1120) {
-    html{
-        font-size: 55%;
-    }
-    .hero-image{
-        width: 40vw;
-        height: 40vw;
-    }
     #facebook-icon {
+        fill: black;
+    }
+
+    #instagram-icon {
+        fill: black;
+    }
+
+    #fiverr-icon {
+        fill: black;
+    }
+
+    #facebook-icon:hover {
         fill: #1771e6;
     }
-    
-    #instagram-icon {
+
+    #instagram-icon:hover {
         fill: #b420a1;
     }
-    
-    #fiverr-icon {
+
+    #fiverr-icon:hover {
         fill: #1dbf73;
     }
 }
 
+@media (max-width:1120) {
+    html {
+        font-size: 55%;
+    }
+
+    .hero-image {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
 @media (max-width:730px) {
-    html{
+    html {
         font-size: 50%;
     }
-    .hero-image{
+
+    .hero-image {
         width: 50vw;
         height: 50vw;
     }
-    .b-button{
+
+    .b-button {
         font-size: 3rem;
         width: 20rem;
     }
 }
 
 @media (max-width:600px) {
-    html{
+    html {
         font-size: 43%;
     }
-    .hero-image{
+
+    .hero-image {
         width: 60vw;
         height: 60vw;
     }
 }
 
 @media (max-width:500px) {
-    html{
+    html {
         font-size: 36%;
     }
-    .social-icons{
+
+    .social-icons {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #facebook-icon, #instagram-icon{
+
+    #facebook-icon,
+    #instagram-icon {
         margin: 2rem auto 0 auto;
     }
 }
 
 @media (max-width:415px) {
-    .projects-heading{
+    .projects-heading {
         font-size: 5rem;
     }
 }

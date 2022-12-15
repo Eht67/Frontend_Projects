@@ -220,15 +220,15 @@ footer p {
     transition: 0.3s ease-in-out;
 }
 
-#facebook-icon:hover {
+#facebook-icon {
     fill: #1771e6;
 }
 
-#instagram-icon:hover {
+#instagram-icon {
     fill: #b420a1;
 }
 
-#fiverr-icon:hover {
+#fiverr-icon {
     fill: #1dbf73;
 }
 
