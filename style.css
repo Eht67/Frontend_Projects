@@ -166,6 +166,9 @@ hr {
     transition: 0.3s ease-in-out;
     overflow: hidden;
     border: 3px solid var(--sec-color);
+    display: grid;
+    place-items: center;
+    background-size: contain;
 }
 
 .project:hover {
@@ -178,6 +181,18 @@ hr {
 .project img {
     height: 100%;
     width: 100%;
+}
+
+.project-name{
+    font-size: 15px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
 }
 
 footer {
@@ -222,5 +237,4 @@ footer p {
     height: 150px;
     position: relative;
     bottom: 22px;
-
 }

@@ -6,7 +6,19 @@
         width: 427px;
         height: 240px;
     }
-
+    .project-name{
+        font-size: 20px;
+    }
+    .social-icons svg{
+        width: 130px;
+        height: 130px;
+    }
+    #fiverr-icon {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: 29px;
+    }
 }
 
 @media (min-width:3600px) {
@@ -16,6 +28,30 @@
     .project{
         width: 640px;
         height: 360px;
+    }
+    .project-name{
+        font-size: 30px;
+    }
+    .social-icons svg{
+        width: 200px;
+        height: 200px;
+    }
+    #fiverr-icon {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        bottom: 44px;
+    }
+}
+
+@media (min-width:1000px) {
+    .project-name{
+        background-color: transparent;
+        color: transparent;
+    }
+    .project:hover .project-name{
+        background-color: black;
+        color: white;
     }
 }
 
