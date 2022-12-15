@@ -53,6 +53,16 @@
         background-color: black;
         color: white;
     }
+}
+
+@media (max-width:1120) {
+    html{
+        font-size: 55%;
+    }
+    .hero-image{
+        width: 40vw;
+        height: 40vw;
+    }
     #facebook-icon {
         fill: #1771e6;
     }
@@ -63,16 +73,6 @@
     
     #fiverr-icon {
         fill: #1dbf73;
-    }
-}
-
-@media (max-width:1120) {
-    html{
-        font-size: 55%;
-    }
-    .hero-image{
-        width: 40vw;
-        height: 40vw;
     }
 }
 
