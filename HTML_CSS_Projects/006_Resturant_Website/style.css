@@ -12,6 +12,7 @@ body {
 header {
     background-color: #FCBF49;
     position: sticky;
+    top: 0px;
     z-index: 3;
 }
 
@@ -60,6 +61,7 @@ header {
 
 .hero-img img {
     transition: 0.3s ease-in-out;
+    border-radius: 300px;
 }
 
 .hero-img img:hover {
@@ -271,6 +273,8 @@ footer {
     top: -20px;
     transition: 0.2s ease-in-out;
 }
+
+/* ehtsham hussain kamboh */
 
 .footer-container h3,
 .footer-container ul,

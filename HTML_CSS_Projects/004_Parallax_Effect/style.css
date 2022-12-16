@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     user-select: none;
     text-align: center;
     transition: 0.3s ease-in-out;
 }
+
 html,
 body {
     height: 100%;
@@ -53,7 +54,7 @@ html {
     background-attachment: fixed;
 }
 
-.ptext p:hover{
+.ptext p:hover {
     background-color: black;
     color: aqua;
 }
@@ -65,8 +66,9 @@ html {
     font-size: 7.5rem;
     padding: 2rem;
     border-radius: 1rem;
-
 }
+
+/* ehtsham hussain kamboh */
 
 .section-1 {
     background-color: aqua;

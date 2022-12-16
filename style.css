@@ -63,6 +63,11 @@ body {
     transition: 0.3s ease-in-out;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
 .intro h1 {
     font-size: 6rem;
     color: var(--txt-color);
@@ -79,6 +84,15 @@ body {
 .intro h2 {
     font-size: 4rem;
     color: var(--txt-color);
+    overflow: hidden;
+    border-right: 0.15em solid var(--btn-color);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(38, end), blinking 0.75s steps(1) infinite;
+}
+
+.frontend-dev {
+    align-self: flex-start;
 }
 
 .hero-buttons {
@@ -157,6 +171,8 @@ hr {
     transition: 0.3s ease-in-out;
 }
 
+/* ehtsham hussain kamboh */
+
 .project {
     width: 320px;
     height: 180px;
@@ -183,7 +199,7 @@ hr {
     width: 100%;
 }
 
-.project-name{
+.project-name {
     font-size: 15px;
     width: fit-content;
     height: fit-content;

@@ -1,0 +1,30 @@
+/* colors */
+:root {
+    --main-bg-color: #2364AA;
+    --sec-color: #3DA5D9;
+    --txt-color: white;
+    --golden: #FEC601;
+    --btn-color: #EA7317;
+    --hover-color: rgba(255, 255, 255, 0.25);
+}
+
+@keyframes typing {
+    from{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+
+}
+
+/* ehtsham hussain kamboh */
+
+@keyframes blinking {
+    0%{
+        border-color: var(--golden);
+    }
+    50%{
+        border-color: transparent;
+    }
+}
