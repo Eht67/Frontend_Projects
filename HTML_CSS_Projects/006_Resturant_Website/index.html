@@ -32,7 +32,9 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni enim deserunt dolore deleniti itaque
                     fugit
                     nesciunt aspernatur nam eos aperiam.</p>
-                <div class="explore">Explore Now!</div>
+                <a href="#explore-us">
+                    <div class="explore">Explore Now!</div>
+                </a>
             </div>
         </section>
         <section class="icons-section container">
@@ -60,7 +62,7 @@
             </div>
         </section>
         <hr>
-        <section class="menu section">
+        <section id="explore-us" class="menu section">
             <div class="menu-button">
                 Our Menu
             </div>
@@ -159,5 +161,21 @@
         </div>
     </footer>
 </body>
+<script>
+    $(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
 
 </html>
