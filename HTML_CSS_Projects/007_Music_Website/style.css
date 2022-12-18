@@ -1,23 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     user-select: none;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-:root{
+:root {
     --main-dark-color: #004E98;
     --main-light-color: #3A6EA5;
     --btn-color: #FF6700;
-    --bg-dark : #C0C0C0;
-    --bg-light : #EBEBEB;
+    --bg-dark: #C0C0C0;
+    --bg-light: #EBEBEB;
 }
 
-.nav-container{
+.nav-container {
     background-color: var(--main-dark-color);
     color: white;
     display: flex;
@@ -27,24 +29,56 @@ html{
     top: 0;
 }
 
-.nav-container h1{
+.nav-container h1 {
     font-size: 2.8rem;
 }
 
-.nav-container ul{
+.nav-container h1:hover {
+    scale: 1.2;
+}
+
+.nav-container ul {
     display: flex;
     list-style: none;
     font-size: 1.8rem;
     align-items: center;
 }
 
-.nav-container ul li{
+.nav-container ul li {
     margin: 0 0.5rem;
     padding: 0.5rem 1rem;
     border-radius: 0.6rem;
 }
 
-.nav-container ul li:hover{
+.nav-container ul li:hover {
     background-color: var(--main-light-color);
     cursor: pointer;
+}
+
+.hero-section {
+    background-image: url(images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 7.2rem);
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20vw;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 6rem;
+}
+
+.hero-section h3 {
+    font-size: 3rem;
+}
+
+.hero-section h4 {
+    font-size: 1.6rem;
 }
