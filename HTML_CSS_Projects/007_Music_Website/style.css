@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Roboto, sans-serif;
     user-select: none;
     box-sizing: border-box;
     transition: 0.3s ease-in-out;
+    line-height: 1.4;
 }
 
 html {
@@ -24,7 +25,7 @@ html {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 5vw;
+    padding: 1.5rem 5vw;
     position: sticky;
     top: 0;
 }
@@ -56,12 +57,11 @@ html {
 }
 
 .hero-section {
-    background-image: url(images/hero-image.jpg);
+    background:linear-gradient(0deg, rgba(16, 18, 126, 0.425), rgba(255, 0, 150, 0.3)), url(images/hero-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 7.2rem);
-    
+    height: calc(100vh - 6.92rem);
     color: white;
     display: flex;
     justify-content: center;
