@@ -38,17 +38,22 @@ html {
     scale: 1.2;
 }
 
-.nav-container ul {
+.nav-container ul{
     display: flex;
     list-style: none;
     font-size: 1.8rem;
     align-items: center;
 }
 
-.nav-container ul li {
+.nav-container ul a{
+    text-decoration: none;
+}
+
+.nav-container ul a li {
     margin: 0 0.5rem;
     padding: 0.5rem 1rem;
     border-radius: 0.6rem;
+    color: white;
 }
 
 .nav-container ul li:hover {
