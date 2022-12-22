@@ -6,6 +6,7 @@
     box-sizing: border-box;
     transition: 0.3s ease-in-out;
     line-height: 1.4;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -38,14 +39,14 @@ html {
     scale: 1.2;
 }
 
-.nav-container ul{
+.nav-container ul {
     display: flex;
     list-style: none;
     font-size: 1.8rem;
     align-items: center;
 }
 
-.nav-container ul a{
+.nav-container ul a {
     text-decoration: none;
 }
 
@@ -62,7 +63,7 @@ html {
 }
 
 .hero-section {
-    background:linear-gradient(0deg, rgba(16, 18, 126, 0.425), rgba(255, 0, 150, 0.3)), url(images/hero-image.jpg);
+    background: linear-gradient(0deg, rgba(16, 18, 126, 0.425), rgba(255, 0, 150, 0.3)), url(images/hero-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -88,3 +89,53 @@ html {
     font-size: 1.6rem;
 }
 
+.music-section {
+    background-color: var(--main-light-color);
+    text-align: center;
+    height: 70rem;
+    padding: 7rem 20vw;
+    color: white;
+}
+
+.music-section:hover svg{
+    fill: var(--btn-color);
+}
+
+.music-section * {
+    margin: 1rem auto;
+}
+
+.music-section svg {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: -1rem;
+    fill: var(--bg-light);
+}
+
+.music-section h2 {
+    font-size: 4rem;
+}
+
+.music-section h4 {
+    font-size: 1.5rem;
+}
+
+.trial-btn {
+    background-color: var(--btn-color);
+    color: white;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    border: 0.3rem solid transparent;
+    border-radius: 1rem;
+}
+
+.trial-btn:hover{
+    background-color: transparent;
+    color: var(--btn-color);
+    border: 0.3rem solid var(--btn-color);
+}
+
+.ipad-iphone-img img{
+    max-width: 70vw;
+}
