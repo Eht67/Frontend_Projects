@@ -139,3 +139,12 @@ html {
 .ipad-iphone-img img{
     max-width: 70vw;
 }
+
+.about-music{
+    margin: 35rem auto 10rem auto;
+    text-align: center;
+}
+
+.about-music *{
+    margin: 1rem auto;
+}
