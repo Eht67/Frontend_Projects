@@ -73,7 +73,6 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 20vw;
     text-align: center;
 }
 
@@ -81,12 +80,18 @@ html {
     font-size: 6rem;
 }
 
+.hero-section h2:hover{
+    color: var(--btn-color);
+}
+
 .hero-section h3 {
     font-size: 3rem;
+    max-width: 90vw;
 }
 
 .hero-section h4 {
     font-size: 1.6rem;
+    max-width: 60vw;
 }
 
 .music-section {
@@ -140,11 +145,43 @@ html {
     max-width: 70vw;
 }
 
+.ipad-iphone-img img:hover,
+.mac-img img:hover{
+    scale: 1.05;
+}
+
 .about-music{
-    margin: 35rem auto 10rem auto;
+    margin: 40rem auto 10rem auto;
     text-align: center;
 }
 
 .about-music *{
-    margin: 1rem auto;
+    margin: 1.6rem auto;
+}
+
+.about-music h3{
+    font-size: 2.5rem;
+}
+
+.about-music p{
+    font-size: 1.3rem;
+    max-width: 70vw;
+}
+
+.secondary-btn{
+    padding: 1rem 2rem;
+    background-color: var(--main-dark-color);
+    border: 2px solid var(--main-dark-color);
+    color: white;
+}
+
+.secondary-btn:hover{
+    background-color: white;
+    color: var(--main-dark-color);
+    border: 2px solid var(--main-dark-color);
+}
+
+.mac-img img{
+    width: 122rem;
+    max-width: 60vw;
 }
