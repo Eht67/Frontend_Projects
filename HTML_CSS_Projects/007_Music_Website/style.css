@@ -236,3 +236,37 @@ html {
 .gift-content p{
     font-size: 1.3rem;
 }
+
+.footer-upper{
+    background-color: var(--main-dark-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links{
+    margin: 2rem 5rem;
+    width: 250px;
+}
+
+.footer-links *{
+    margin: 1rem 0;
+    color: white;
+}
+
+.footer-links h4{
+    font-size: 2rem;
+}
+
+.footer-links ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.footer-lower{
+    background-color: var(--main-light-color);
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
