@@ -155,17 +155,20 @@ html {
     text-align: center;
 }
 
-.about-music *{
+.about-music *,
+.video-section *{
     margin: 1.6rem auto;
 }
 
-.about-music h3{
+.about-music h3,
+.video-section h3{
     font-size: 2.5rem;
 }
 
-.about-music p{
+.about-music p,
+.video-section p{
     font-size: 1.3rem;
-    max-width: 70vw;
+    max-width: 60vw;
 }
 
 .secondary-btn{
@@ -185,3 +188,12 @@ html {
     width: 122rem;
     max-width: 60vw;
 }
+
+.video-section{
+    height: 80rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background-image: image();
+}
+
