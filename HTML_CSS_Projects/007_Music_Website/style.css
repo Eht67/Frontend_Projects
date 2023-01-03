@@ -146,7 +146,8 @@ html {
 }
 
 .ipad-iphone-img img:hover,
-.mac-img img:hover{
+.mac-img img:hover,
+.gift-card img:hover{
     scale: 1.05;
 }
 
@@ -163,6 +164,7 @@ html {
 .about-music h3,
 .video-section h3{
     font-size: 2.5rem;
+    max-width: 90vw;
 }
 
 .about-music p,
@@ -194,6 +196,43 @@ html {
     display: grid;
     place-content: center;
     text-align: center;
-    background-image: image();
+    color: white;
+    background-image: url(images/entertainment.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
+.gift-section{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10rem 0;
+}
+
+.gift-card,
+.gift-content{
+    width: 40%;
+}
+
+.gift-card img{
+    width: 70%;
+}
+
+.gift-content *{
+    margin: 1rem;
+    line-height: 1.4;
+}
+
+.gift-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.gift-content h3{
+    font-size: 2.5rem;
+}
+
+.gift-content p{
+    font-size: 1.3rem;
+}
