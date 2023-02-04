@@ -76,6 +76,6 @@ button {
 }
 
 button:hover {
-    background-color: transparent;
+    background-color: #ffdbe8;
     border: 2px solid #ffafcc;
 }
