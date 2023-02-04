@@ -71,10 +71,10 @@ button {
     margin: 10% 10%;
     background-color: #ffafcc;
     font-size: 2.2rem;
-    border: 2 px solid transparent;
+    border: 2 px solid black;
     border-radius: 1rem;
 }
 
 button:hover {
-    background-color: #ffdbe8;
+    background-color: #ffc5da;
 }
