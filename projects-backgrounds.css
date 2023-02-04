@@ -2,30 +2,36 @@
 
 /* html css projects */
 
-#html-css-001{
+#html-css-001 {
     background-image: url("images/screenshots/html+css/001.png");
 }
 
-#html-css-002{
+#html-css-002 {
     background-image: url("images/screenshots/html+css/002.jpg");
 }
 
-#html-css-003{
+#html-css-003 {
     background-image: url("images/screenshots/html+css/003.png");
 }
 
-#html-css-004{
+#html-css-004 {
     background-image: url("images/screenshots/html+css/004.jpg");
 }
 
-#html-css-005{
+#html-css-005 {
     background-image: url("images/screenshots/html+css/005.jpg");
 }
 
-#html-css-006{
+#html-css-006 {
     background-image: url("images/screenshots/html+css/006.jpg");
 }
 
-#html-css-007{
+#html-css-007 {
     background-image: url("images/screenshots/html+css/007.jpg");
+}
+
+/* html css javascript projects */
+
+#html-css-js-001 {
+    background-image: url("images/screenshots/html+css+js/001.png");
 }

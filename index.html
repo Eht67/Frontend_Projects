@@ -18,7 +18,9 @@
             <div class="hero-content">
                 <div class="intro">
                     <h1><span class="hi-text">Hi!</span> <span class="i-am-text">I am </span> <br> Ehtsham Hussain</h1>
-                    <span class="frontend-dev"><h2>Frontend Developer!</h2></span>
+                    <span class="frontend-dev">
+                        <h2>Frontend Developer!</h2>
+                    </span>
                 </div>
                 <div class="hero-buttons">
                     <a href="#projects">
@@ -37,7 +39,8 @@
     <hr>
     <main>
         <div id="projects" class="projects-container">
-            <div class="projects-heading">HTML + CSS Projects!</div>
+            <!-- html-css projects -->
+            <div class="projects-heading">HTML + CSS Projects!</div>  
             <div class="projects-card">
                 <a href="/HTML_CSS_Projects/001_Ultimate_Fashion_Website/index.html">
                     <div class="project" id="html-css-001">
@@ -75,6 +78,17 @@
                     </div>
                 </a>
             </div>
+            <div id="projects" class="projects-container">
+                <!-- html-css projects -->
+                <div class="projects-heading">HTML + CSS + JS Projects!</div>  
+                <div class="projects-card">
+                    <a href="/HTML_CSS_JS_Projects/001_counter/index.html">
+                        <div class="project" id="html-css-js-001">
+                            <div class="project-name">Counter App With Javascript</div>
+                        </div>
+                    </a>
+                </div>
+            
         </div>
     </main>
     <hr>
@@ -106,20 +120,21 @@
         <!-- ehtsham hussain kamboh -->
     </footer>
 </body>
-    <script>
-         $(function() {
-       $('a[href*="#"]:not([href="#"])').click(function() {
-         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-           var target = $(this.hash);
-           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html, body').animate({
-               scrollTop: target.offset().top
-             }, 1000);
-             return false;
-           }
-         }
-       });
-     });
-    </script>
+<script>
+    $(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+
 </html>
