@@ -152,7 +152,7 @@ hr {
 .projects-heading:hover {
     background-color: transparent;
     color: var(--golden);
-    border: 3px solid var(--golden);
+    background-color: rgba(61, 165, 217, 0.5);
     box-sizing: border-box;
     transition: 0.3s ease-in-out;
 }
@@ -177,7 +177,7 @@ hr {
 }
 
 .projects-card:hover {
-    border: 2px solid var(--golden);
+    background-color: rgba(61, 165, 217, 0.5);
     transition: 0.3s ease-in-out;
 }
 
@@ -191,17 +191,16 @@ hr {
     background-color: var(--txt-color);
     transition: 0.3s ease-in-out;
     overflow: hidden;
-    border: 3px solid var(--sec-color);
+    border: 1px solid transparent;
     display: grid;
     place-items: center;
     background-size: contain;
 }
 
 .project:hover {
-    border: 3px solid var(--golden);
     scale: 1.08;
-    background-color: var(--hover-color);
     transition: 0.3s ease-in-out;
+    border: 1px solid var(--golden);
 }
 
 .project img {
@@ -210,11 +209,11 @@ hr {
 }
 
 .project-name {
-    font-size: 15px;
+    font-size: 18px;
     width: fit-content;
     height: fit-content;
     padding: 10px 20px;
-    background-color: black;
+    background-color: red;
     color: white;
     border-radius: 12px;
     font-weight: 500;

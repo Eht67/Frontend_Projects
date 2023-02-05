@@ -59,7 +59,7 @@
     }
 
     .project:hover .project-name {
-        background-color: black;
+        background-color: red;
         color: white;
     }
 
