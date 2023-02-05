@@ -2,4 +2,4 @@
 
 These are frontend practice projects made by Ehtsham Hussain.
 
-I am still working on it and will do one project every 3 days. IA
+I am still working on it and will keep adding new projects. IA
