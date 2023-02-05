@@ -12,7 +12,7 @@
 /* colors */
 :root {
     --main-bg-color: #2364AA;
-    --sec-color: #3DA5D9;
+    --sec-color: rgba(61, 165, 217, 0.2);
     --txt-color: white;
     --golden: #FEC601;
     --btn-color: #EA7317;
@@ -24,7 +24,12 @@ html {
 }
 
 body {
-    background-color: var(--main-bg-color);
+    background-image: url('/images/background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: scroll;
 }
 
 .container {
@@ -39,10 +44,6 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
-    background-image: url('/images/background.jpeg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 .hero-image {
@@ -149,7 +150,6 @@ hr {
 
 .projects-heading:hover {
     background-color: transparent;
-    color: var(--sec-color);
     color: var(--golden);
     border: 3px solid var(--golden);
     box-sizing: border-box;
@@ -224,10 +224,10 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--golden);
 }
 
 footer p {
+    color: white;
     font-size: 6rem;
     margin: 3rem auto;
 }
