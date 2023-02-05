@@ -256,11 +256,18 @@ footer p {
 
 #fiverr-icon {
     fill: #1dbf73;
-}
-
-#fiverr-icon {
     width: 150px;
     height: 150px;
     position: relative;
     bottom: 22px;
+}
+
+#linkedin-icon{
+    fill: #1771e6;
+}
+
+#github-icon{
+    fill: purple;
+    width: 100px;
+    height: 100px;
 }
