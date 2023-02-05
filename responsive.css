@@ -166,7 +166,11 @@
 }
 
 @media (max-width:415px) {
-    .projects-heading {
-        font-size: 5rem;
+    /* .projects-heading {
+        font-size: 3rem;
+    } */
+    .project{
+        width: 284px;
+        height: 160px;
     }
 }
