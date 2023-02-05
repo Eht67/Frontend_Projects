@@ -159,6 +159,10 @@
     #instagram-icon {
         margin: 2rem auto 0 auto;
     }
+
+    #fiverr-icon{
+        margin-bottom: -9rem;
+    }
 }
 
 @media (max-width:415px) {
