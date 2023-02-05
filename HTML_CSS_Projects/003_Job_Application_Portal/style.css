@@ -9,13 +9,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightgreen;
+    background-image: url('/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
 }
 
 .apply_box {
     max-width: 950px;
-    background-color: rgb(211, 255, 211);
+    background-color: rgb(167, 240, 167);
     border-radius: 30px;
     box-shadow: 10px 10px 10px rgba(1, 1, 0, 0.3);
 }
@@ -57,7 +59,7 @@ textarea {
     border-radius: 5px;
 }
 
-textarea{
+textarea {
     margin-top: 10px;
 }
 
@@ -99,7 +101,7 @@ input:focus {
     grid-column: 1 / span 2;
 }
 
-.textarea-control textarea{
+.textarea-control textarea {
     width: 100%;
 }
 
@@ -115,6 +117,7 @@ input:focus {
     .form-control textarea {
         width: 100%;
     }
+
     .textarea-control {
         grid-column: 1 / span 1;
     }

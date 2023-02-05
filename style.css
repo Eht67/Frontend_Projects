@@ -12,7 +12,8 @@
 /* colors */
 :root {
     --main-bg-color: #2364AA;
-    --sec-color: rgba(61, 165, 217, 0.2);
+    --sec-color: rgba(61, 165, 217);
+    --sec-color-translucent: rgba(61, 165, 217, 0.25);
     --txt-color: white;
     --golden: #FEC601;
     --btn-color: #EA7317;
@@ -139,7 +140,7 @@ hr {
     width: fit-content;
     margin: 0 auto;
     max-width: 90vw;
-    background-color: var(--sec-color);
+    background-color: var(--sec-color-translucent);
     border-radius: 1.2rem;
     font-size: 6rem;
     padding: 1rem 2rem;
@@ -164,7 +165,7 @@ hr {
     width: fit-content;
     max-width: 90vw;
     /* height: 500px; */
-    background-color: var(--sec-color);
+    background-color: var(--sec-color-translucent);
     margin: 4vh auto 0 auto;
     padding: 1rem;
     border-radius: 1.2rem;

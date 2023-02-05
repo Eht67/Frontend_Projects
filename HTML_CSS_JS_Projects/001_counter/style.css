@@ -20,7 +20,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: purple;
+    background-image: url('/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-section {
@@ -28,7 +30,7 @@ body {
     height: 350px;
     max-width: 90vw;
     max-height: 90vh;
-    background-color: #bde0fe;
+    background-color: rgba(61, 165, 217, 0.25);
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -44,14 +46,14 @@ body {
     font-size: 4.8rem;
     font-weight: 400;
     padding: 4% 10%;
-    color: purple;
+    color: white;
 }
 
 .display {
     width: 90%;
     height: 30%;
     margin: 2% auto 0 auto;
-    background-color: #a2d2ff;
+    background-color: rgb(255, 255, 255);
     border-radius: 1.6rem;
     display: flex;
     justify-content: center;
