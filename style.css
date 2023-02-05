@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    max-width: 90vw;
+    width: 100vw;
     margin: auto;
     min-height: 100vh;
     display: grid;
@@ -39,6 +39,10 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
+    background-image: url('/images/background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .hero-image {
