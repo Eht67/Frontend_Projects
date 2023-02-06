@@ -11,6 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url('/images/background.jpeg');
+    background-color: #2364AA;
     background-size: cover;
     background-repeat: no-repeat;
 }

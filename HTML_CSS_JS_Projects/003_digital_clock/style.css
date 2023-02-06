@@ -21,6 +21,7 @@ body{
     align-items: center;
     justify-content: center;
     background-image: url('/images/background.jpeg');
+    background-color: #2364AA;
     background-repeat: no-repeat;
     background-size: cover;
 }
