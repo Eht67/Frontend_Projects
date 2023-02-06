@@ -281,6 +281,10 @@ html {
     .about-music {
         margin: 20rem auto 10rem auto;
     }
+    .nav-container{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width:520px) {
