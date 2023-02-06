@@ -1,0 +1,54 @@
+@font-face {
+    font-family: '7 segments';
+    src: url(/Fonts/Seven\ Segment.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'7 segments', 'Times New Roman', Times, serif;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    background-color: rgba(61, 165, 217, 0.25);
+    padding: 2% 4%;
+    font-size: 28px;
+    border-radius: 10px;
+}
+
+.clock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+p{
+    width: 23%;
+    text-align: center;
+    background-color: rgba(61, 165, 217, 0.25);
+    border-radius: 10px;
+    padding: 2% 4%;
+    margin: 8% auto;
+    font-size: 80px;
+}
