@@ -26,6 +26,7 @@ html {
 
 body {
     background-image: url('/images/background.jpeg');
+    background-color: var(--main-bg-color);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
