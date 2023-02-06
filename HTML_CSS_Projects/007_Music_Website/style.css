@@ -80,7 +80,7 @@ html {
     font-size: 6rem;
 }
 
-.hero-section h2:hover{
+.hero-section h2:hover {
     color: var(--btn-color);
 }
 
@@ -102,7 +102,7 @@ html {
     color: white;
 }
 
-.music-section:hover svg{
+.music-section:hover svg {
     fill: var(--btn-color);
 }
 
@@ -135,63 +135,63 @@ html {
     border-radius: 1rem;
 }
 
-.trial-btn:hover{
+.trial-btn:hover {
     background-color: transparent;
     color: var(--btn-color);
     border: 0.3rem solid var(--btn-color);
 }
 
-.ipad-iphone-img img{
+.ipad-iphone-img img {
     max-width: 70vw;
 }
 
 .ipad-iphone-img img:hover,
 .mac-img img:hover,
-.gift-card img:hover{
+.gift-card img:hover {
     scale: 1.05;
 }
 
-.about-music{
+.about-music {
     margin: 40rem auto 10rem auto;
     text-align: center;
 }
 
 .about-music *,
-.video-section *{
+.video-section * {
     margin: 1.6rem auto;
 }
 
 .about-music h3,
-.video-section h3{
+.video-section h3 {
     font-size: 2.5rem;
     max-width: 90vw;
 }
 
 .about-music p,
-.video-section p{
+.video-section p {
     font-size: 1.3rem;
     max-width: 60vw;
 }
 
-.secondary-btn{
+.secondary-btn {
     padding: 1rem 2rem;
     background-color: var(--main-dark-color);
     border: 2px solid var(--main-dark-color);
     color: white;
 }
 
-.secondary-btn:hover{
+.secondary-btn:hover {
     background-color: white;
     color: var(--main-dark-color);
     border: 2px solid var(--main-dark-color);
 }
 
-.mac-img img{
+.mac-img img {
     width: 122rem;
     max-width: 60vw;
 }
 
-.video-section{
+.video-section {
     height: 80rem;
     display: grid;
     place-content: center;
@@ -203,7 +203,7 @@ html {
     background-repeat: no-repeat;
 }
 
-.gift-section{
+.gift-section {
     display: flex;
     width: 80%;
     margin: 0 auto;
@@ -211,62 +211,86 @@ html {
 }
 
 .gift-card,
-.gift-content{
+.gift-content {
     width: 40%;
 }
 
-.gift-card img{
+.gift-card img {
     width: 70%;
 }
 
-.gift-content *{
+.gift-content * {
     margin: 1rem;
     line-height: 1.4;
 }
 
-.gift-content{
+.gift-content {
     display: flex;
     flex-direction: column;
 }
 
-.gift-content h3{
+.gift-content h3 {
     font-size: 2.5rem;
 }
 
-.gift-content p{
+.gift-content p {
     font-size: 1.3rem;
 }
 
-.footer-upper{
+.footer-upper {
     background-color: var(--main-dark-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.footer-links{
+.footer-links {
     margin: 2rem 5rem;
     width: 250px;
 }
 
-.footer-links *{
+.footer-links * {
     margin: 1rem 0;
     color: white;
 }
 
-.footer-links h4{
+.footer-links h4 {
     font-size: 2rem;
 }
 
-.footer-links ul li{
+.footer-links ul li {
     list-style: none;
     font-size: 1.3rem;
 }
 
-.footer-lower{
+.footer-lower {
     background-color: var(--main-light-color);
     text-align: center;
     color: white;
     font-size: 1.5rem;
     padding: 1rem 0;
+}
+
+@media (max-width:1100px) {
+    .about-music {
+        margin: 30rem auto 10rem auto;
+    }
+}
+
+@media (max-width:800px) {
+    .about-music {
+        margin: 20rem auto 10rem auto;
+    }
+}
+
+@media (max-width:520px) {
+    .about-music {
+        margin: 10rem auto 10rem auto;
+    }
+}
+
+@media (max-width:327px) {
+    .about-music {
+        margin: 20rem auto 10rem auto;
+    }
 }
