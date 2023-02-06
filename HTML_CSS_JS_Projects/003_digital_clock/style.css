@@ -11,6 +11,10 @@
     color: white;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body{
     height: 100vh;
     display: flex;
@@ -24,6 +28,7 @@ body{
 .main-container{
     width: 600px;
     height: 300px;
+    max-width: 90vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +37,7 @@ body{
 .heading{
     background-color: rgba(61, 165, 217, 0.25);
     padding: 2% 4%;
-    font-size: 28px;
+    font-size: 2.8rem;
     border-radius: 10px;
 }
 
@@ -50,5 +55,11 @@ p{
     border-radius: 10px;
     padding: 2% 4%;
     margin: 8% auto;
-    font-size: 80px;
+    font-size: 8rem;
+}
+
+@media (max-width:580px) {
+    html {
+        font-size: 40%;
+    }
 }
