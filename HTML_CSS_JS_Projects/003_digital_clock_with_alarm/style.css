@@ -28,7 +28,7 @@ body{
 
 .main-container{
     width: 600px;
-    height: 300px;
+    height: 400px;
     max-width: 90vw;
     display: flex;
     flex-direction: column;
@@ -57,6 +57,19 @@ p{
     padding: 2% 4%;
     margin: 8% auto;
     font-size: 8rem;
+}
+
+#alarm-btn{
+    background-color: rgba(61, 165, 217, 0.25);
+    font-size: 6rem;
+    padding: 2% 4%;
+    border-radius: 10px;
+}
+
+#alarm-btn:hover{
+    background-color: rgba(61, 165, 217, 0.5);
+    user-select: none;
+    cursor: pointer;
 }
 
 @media (max-width:580px) {
