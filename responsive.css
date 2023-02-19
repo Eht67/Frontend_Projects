@@ -173,4 +173,10 @@
         width: 284px;
         height: 160px;
     }
+    .hero-buttons{
+        justify-content: center;
+    }
+    .intro{
+        margin: 0 3rem;
+    }
 }

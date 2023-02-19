@@ -120,6 +120,7 @@ body {
     transition: 0.3s ease-in-out;
     font-family: 'Times New Roman', Times, serif;
     width: 17rem;
+    text-align: center;
 }
 
 .b-button:hover {
