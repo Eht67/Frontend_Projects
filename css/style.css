@@ -153,15 +153,6 @@ hr {
     padding: 1rem 2rem;
     color: var(--txt-color);
     border: 3px solid transparent;
-    transition: 0.2s ease-in-out;
-}
-
-.projects-heading:hover {
-    background-color: transparent;
-    color: var(--golden);
-    background-color: var(--sec-color-translucent);
-    box-sizing: border-box;
-    transition: 0.2s ease-in-out;
 }
 
 .other-heading{
