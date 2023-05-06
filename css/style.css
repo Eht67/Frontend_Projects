@@ -67,12 +67,12 @@ body {
 .hero-image img {
     width: 100%;
     height: 100%;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .hero-image img:hover {
-    scale: 1.07;
-    transition: 0.3s ease-in-out;
+    scale: 1.03;
+    transition: 0.2s ease-in-out;
 }
 
 .intro {
@@ -122,7 +122,7 @@ body {
     border-radius: 1.2rem;
     padding: 1rem 2rem;
     margin: 1rem 2.4rem 1rem 0;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     font-family: 'Times New Roman', Times, serif;
     width: 17rem;
     text-align: center;
@@ -147,21 +147,21 @@ hr {
     width: fit-content;
     margin: 0 auto;
     max-width: 90vw;
-    background-color: var(--sec-color-translucent);
+    background-color: var(--btn-color);
     border-radius: 1.2rem;
     font-size: 6rem;
     padding: 1rem 2rem;
     color: var(--txt-color);
     border: 3px solid transparent;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .projects-heading:hover {
     background-color: transparent;
     color: var(--golden);
-    background-color: rgba(61, 165, 217, 0.5);
+    background-color: var(--sec-color-translucent);
     box-sizing: border-box;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .other-heading{
@@ -180,14 +180,11 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    transition: 0.3s ease-in-out;
 }
 
-.projects-card:hover {
-    background-color: rgba(61, 165, 217, 0.5);
-    transition: 0.3s ease-in-out;
+.projects-card:hover{
+    border-radius: 0;
 }
-
 /* ehtsham hussain kamboh */
 
 .project {
@@ -196,7 +193,7 @@ hr {
     margin: 1rem;
     border-radius: 1.2rem;
     background-color: var(--txt-color);
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     overflow: hidden;
     border: 1px solid transparent;
     display: grid;
@@ -206,7 +203,7 @@ hr {
 
 .project:hover {
     scale: 1.08;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     border: 1px solid var(--golden);
 }
 
@@ -224,7 +221,7 @@ hr {
     color: white;
     border-radius: 12px;
     font-weight: 500;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 footer {
@@ -249,7 +246,7 @@ footer p {
 .social-icons svg {
     margin: 0 3rem;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 #facebook-icon {
