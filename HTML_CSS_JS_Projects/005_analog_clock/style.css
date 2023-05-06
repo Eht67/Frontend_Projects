@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url(background.avif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body{
 }
 
 
-.clock-body{
+#clock-body {
     width: 666px;
     height: 666px;
     max-width: 95vmin;
@@ -27,10 +27,52 @@ body{
     align-items: center;
 }
 
-.clock{
+#clock {
     width: 90%;
     height: 90%;
-    background-image: url(circle-clock.png);
+    background-image: url(clock.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#hour-hand,
+#minute-hand,
+#second-hand {
+    position: relative;
+    border-radius: 12px;
+    transform-origin: bottom;
+    width: 1.5%;
+    background-color: black;
+}
+
+#hour-hand {
+    height: 22%;
+    bottom: 11%;
+    left: 1.1%;
+}
+
+#minute-hand{
+    height: 40%;
+    bottom: 20%;
+    right: 0.37%;
+}
+
+#second-hand{
+    height: 40%;
+    width: .75%;
+    bottom: 20%;
+    right: 1.64%;
+    background-color: red;
+}
+
+#red-circle{
+    background-color: red;
+    width: 4%;
+    height: 4%;
+    border-radius: 100%;
+    position: absolute;
 }

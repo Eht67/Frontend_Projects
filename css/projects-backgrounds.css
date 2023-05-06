@@ -1,0 +1,53 @@
+/* This css file specifies the background /images for the divs showing my projects. */
+
+/* html css projects */
+
+#html-css-001 {
+    background-image: url("/images/screenshots/html+css/001.png");
+}
+
+#html-css-002 {
+    background-image: url("/images/screenshots/html+css/002.jpg");
+}
+
+#html-css-003 {
+    background-image: url("/images/screenshots/html+css/003.jpg");
+}
+
+#html-css-004 {
+    background-image: url("/images/screenshots/html+css/004.jpg");
+}
+
+#html-css-005 {
+    background-image: url("/images/screenshots/html+css/005.jpg");
+}
+
+#html-css-006 {
+    background-image: url("/images/screenshots/html+css/006.jpg");
+}
+
+#html-css-007 {
+    background-image: url("/images/screenshots/html+css/007.jpg");
+}
+
+/* html css javascript projects */
+
+#html-css-js-001 {
+    background-image: url("/images/screenshots/html+css+js/001.jpg");
+}
+
+#html-css-js-002 {
+    background-image: url("/images/screenshots/html+css+js/002.jpg");
+}
+
+#html-css-js-003 {
+    background-image: url("/images/screenshots/html+css+js/003.jpg");
+}
+
+#html-css-js-004 {
+    background-image: url("/images/screenshots/html+css+js/004.jpg");
+}
+
+#html-css-js-005{
+    background-image: url("/images/screenshots/html+css+js/005.jpg");
+}
