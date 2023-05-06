@@ -21,8 +21,8 @@
     --sec-color-translucent: rgba(61, 165, 217, 0.25);
     --txt-color: white;
     --golden: #FEC601;
-    --btn-color: #EA7317;
     --hover-color: rgba(255, 255, 255, 0.25);
+    --btn-color-new: red;
 }
 
 html {
@@ -58,9 +58,9 @@ body {
     height: 38vw;
     border-radius: 7vw;
     overflow: hidden;
-    border-top: 0.5rem solid var(--btn-color);
-    border-left: 0.5rem solid var(--btn-color);
-    border-right: 0.5rem solid var(--btn-color);
+    border-top: 0.5rem solid var(--btn-color-new);
+    border-left: 0.5rem solid var(--btn-color-new);
+    border-right: 0.5rem solid var(--btn-color-new);
     margin: 3rem 0;
 }
 
@@ -97,7 +97,7 @@ body {
     font-size: 4rem;
     color: var(--txt-color);
     overflow: hidden;
-    border-right: 0.15em solid var(--btn-color);
+    border-right: 0.15em solid var(--btn-color-new);
     white-space: nowrap;
     margin: 0 auto;
     animation: typing 5s steps(38, end), blinking 0.75s steps(1) infinite;
@@ -116,7 +116,7 @@ body {
 }
 
 .b-button {
-    background-color: var(--btn-color);
+    background-color: var(--btn-color-new);
     color: var(--txt-color);
     font-size: 2.5rem;
     border-radius: 1.2rem;
@@ -147,7 +147,7 @@ hr {
     width: fit-content;
     margin: 0 auto;
     max-width: 90vw;
-    background-color: var(--btn-color);
+    background-color: var(--btn-color-new);
     border-radius: 1.2rem;
     font-size: 6rem;
     padding: 1rem 2rem;
