@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Braah One', sans-serif;
+}
+
+body {
+    background-image: url(background.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section {
+    width: 450px;
+    height: 600px;
+    background-color: rgba(123, 20, 207, 0.51);
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 12px;
+}
+
+#display {
+    font-size: clamp(36px, 7vw, 52px);
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(123, 20, 207, 0.51);
+    margin: 4%;
+    border-radius: 12px;
+}
+
+.button-grid {
+    height: 71%;
+    margin: 0 4% 4% 4%;
+    background-color: rgba(123, 20, 207, 0.51);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 2%;
+    gap: 2%;
+}
+
+button {
+    background-color: blueviolet;
+    border: none;
+    border-radius: 12px;
+    font-size: clamp(23px, 4vw, 32px);
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: rgb(194, 0, 194);
+    cursor: pointer;
+}
+
+.side-buttons {
+    background-color: red;
+}

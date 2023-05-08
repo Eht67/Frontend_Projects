@@ -1,0 +1,1 @@
+console.log('what a nice day')
