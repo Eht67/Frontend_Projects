@@ -1,3 +1,5 @@
+/* this css file contains all the media queries to add responsiveness to my website */
+
 @media (min-width:2400px) {
     html {
         font-size: 90%;
