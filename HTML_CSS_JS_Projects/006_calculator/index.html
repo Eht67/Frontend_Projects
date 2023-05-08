@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,7 +32,7 @@
             <button onclick="display.innerHTML += '0'">0</button>
             <button onclick="display.innerHTML += '00'">00</button>
             <button onclick="display.innerHTML += '000'">000</button>
-            <button onclick="display.innerHTML = eval(display.innerHTML)" class="side-buttons">=</button>
+            <button onclick="display.innerHTML = eval(display.innerHTML).toFixed(2)" class="side-buttons">=</button>
         </div>
     </section>
 </body>
