@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section class="main-section">
         <div id="display"></div>
         <div class="button-grid">
-            <button id="clear-all-btn" class="side-buttons">AC</button>
-            <button id="delete-btn" class="side-buttons">DEL</button>
-            <button value="." class="side-buttons">.</button>
-            <button value="/" class="side-buttons">/</button>
-            <button value="7">7</button>
-            <button value="8">8</button>
-            <button value="9">9</button>
-            <button value="*" class="side-buttons">*</button>
-            <button value="4">4</button>
-            <button value="5">5</button>
-            <button value="6">6</button>
-            <button value="-" class="side-buttons">-</button>
-            <button value="1">1</button>
-            <button value="2">2</button>
-            <button value="3">3</button>
-            <button value="+" class="side-buttons">+</button>
-            <button value="0">0</button>
-            <button value="00">00</button>
-            <button value="000">000</button>
-            <button id="solve-btn" class="side-buttons">=</button>
+            <button onclick="display.innerHTML = ''" class="side-buttons">AC</button>
+            <button onclick="display.innerHTML = display.innerHTML.slice(0,-1)" class="side-buttons">DEL</button>
+            <button onclick="display.innerHTML += '.'" class="side-buttons">.</button>
+            <button onclick="display.innerHTML += '/'" class="side-buttons">/</button>
+            <button onclick="display.innerHTML += '7'">7</button>
+            <button onclick="display.innerHTML += '8'">8</button>
+            <button onclick="display.innerHTML += '9'">9</button>
+            <button onclick="display.innerHTML += '*'" class="side-buttons">*</button>
+            <button onclick="display.innerHTML += '4'">4</button>
+            <button onclick="display.innerHTML += '5'">5</button>
+            <button onclick="display.innerHTML += '6'">6</button>
+            <button onclick="display.innerHTML += '-'" class="side-buttons">-</button>
+            <button onclick="display.innerHTML += '1'">1</button>
+            <button onclick="display.innerHTML += '2'">2</button>
+            <button onclick="display.innerHTML += '3'">3</button>
+            <button onclick="display.innerHTML += '+'" class="side-buttons">+</button>
+            <button onclick="display.innerHTML += '0'">0</button>
+            <button onclick="display.innerHTML += '00'">00</button>
+            <button onclick="display.innerHTML += '000'">000</button>
+            <button onclick="display.innerHTML = eval(display.innerHTML)" class="side-buttons">=</button>
         </div>
     </section>
-    <script src="script.js"></script>
 </body>
+
 </html>

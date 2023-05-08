@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Braah One', sans-serif;
+    user-select: none;
 }
 
 body {
@@ -28,15 +29,17 @@ body {
 }
 
 #display {
-    font-size: clamp(36px, 7vw, 52px);
+    font-size: clamp(36px, 6vw, 48px);
     height: 20%;
     display: flex;
     justify-content: center;
+    overflow: scroll;
     align-items: center;
     color: white;
     background-color: rgba(123, 20, 207, 0.51);
     margin: 4%;
     border-radius: 12px;
+    overflow: scroll;
 }
 
 .button-grid {
@@ -55,7 +58,7 @@ button {
     background-color: blueviolet;
     border: none;
     border-radius: 12px;
-    font-size: clamp(23px, 4vw, 32px);
+    font-size: clamp(23px, 4vw, 30px);
     color: white;
     transition: 0.2s ease-in-out;
 }
