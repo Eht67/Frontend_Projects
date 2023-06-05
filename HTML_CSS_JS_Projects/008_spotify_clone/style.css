@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Tsukimi+Rounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Tsukimi+Rounded&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color:  bisque;
+}
+
+nav{
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    margin: 0 12px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.brand img{
+    width: 40px;
+    padding-right: 8px;
+}
+
+.container{
+    min-height: 75vh;
+    font-family: 'Tsukimi Rounded', sans-serif;
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 90%;
+    margin: 26px auto;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 120px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#songProgressBar{
+    width: 85%;
+    accent-color: #00d856;
+}
+
+.iconsDiv{
+    display: flex;
+    margin-top: 20px;
+}
+.iconsDiv svg{
+    width: 20px;
+    fill: white;
+    margin: 0 20px;
+}
+
+#play-svg{
+    width: 32px;
+}
+
+.iconsDiv svg:hover{
+    cursor: pointer;
+    fill: #5ed28c;
+}
