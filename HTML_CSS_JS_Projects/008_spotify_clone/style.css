@@ -1,61 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Tsukimi+Rounded&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Tsukimi+Rounded&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    background-color:  bisque;
+html {
+    font-size: 62.5%;
 }
 
-nav{
+body {
+    height: 100vh;
+    background-color: bisque;
+    overflow: scroll;
+}
+
+nav {
     font-family: 'Lato', sans-serif;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    height: 50px;
+    height: 5rem;
     background-color: black;
     color: white;
 }
 
-nav ul li{
-    margin: 0 12px;
+nav ul li {
+    margin: 0 1.2rem;
+    font-size: 1.6rem;
 }
 
-.brand{
+.brand {
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
-.brand img{
-    width: 40px;
-    padding-right: 8px;
+.brand img {
+    width: 4rem;
+    padding-right: 0.8rem;
 }
 
-.container{
-    min-height: 75vh;
+.container {
+    height: calc(100vh - 2vh - 5rem - 11rem);
     font-family: 'Tsukimi Rounded', sans-serif;
     display: flex;
-    background-color: black;
+    background-image: url(background.avif);
+    background-size: cover;
     color: white;
-    width: 90%;
-    margin: 26px auto;
-    border-radius: 12px;
-    padding: 16px;
+    width: 80%;
+    border-radius: 1.6rem;
+    margin: 1vh auto;
+    padding: 1.6rem;
+    overflow: scroll;
 }
 
-.bottom{
-    position: sticky;
+.songBanner {
+    width: 40%;
+}
+
+.songList {
+    width: 60%;
+    text-align: center;
+}
+
+.songList h1 {
+    font-size: 3.6rem;
+}
+
+.bottom {
+    position: absolute;
+    width: 100vw;
     bottom: 0;
-    height: 120px;
+    height: 11rem;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -63,26 +86,52 @@ nav ul li{
     align-items: center;
 }
 
-#songProgressBar{
+#songProgressBar {
     width: 85%;
     accent-color: #00d856;
+    margin-top: 1.2rem;
 }
 
-.iconsDiv{
+.iconsDiv {
     display: flex;
-    margin-top: 20px;
+    margin-top: 1.2rem;
 }
-.iconsDiv svg{
-    width: 20px;
+
+.iconsDiv svg {
+    width: 1.8rem;
     fill: white;
-    margin: 0 20px;
+    margin: 0 1.8rem;
 }
 
-#play-svg{
-    width: 32px;
+#play-svg {
+    width: 2.8rem;
 }
 
-.iconsDiv svg:hover{
+.iconsDiv svg:hover {
     cursor: pointer;
     fill: #5ed28c;
+}
+
+@media screen and (max-width: 817px) {
+    html {
+        font-size: 50%;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .songBanner {
+        display: none;
+    }
+
+    .songList {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html{
+        font-size: 40%;
+    }
 }
