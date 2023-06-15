@@ -19,20 +19,13 @@ body {
 
 nav {
     font-family: 'Lato', sans-serif;
-}
-
-nav ul {
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style-type: none;
     height: 5rem;
     background-color: black;
     color: white;
-}
-
-nav ul li {
-    margin: 0 1.2rem;
-    font-size: 1.6rem;
 }
 
 .brand {
@@ -42,7 +35,7 @@ nav ul li {
     font-weight: 600;
 }
 
-.brand img {
+nav img {
     width: 4rem;
     padding-right: 0.8rem;
 }
@@ -53,25 +46,64 @@ nav ul li {
     display: flex;
     background-image: url(background.avif);
     background-size: cover;
+    background-position: right;
+    overflow: hidden;
     color: white;
     width: 80%;
     border-radius: 1.6rem;
     margin: 1vh auto;
     padding: 1.6rem;
-    overflow: scroll;
 }
 
 .songBanner {
     width: 40%;
 }
 
-.songList {
+.songDiv {
     width: 60%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
 }
 
-.songList h1 {
+.songDiv h1 {
     font-size: 3.6rem;
+}
+
+.songList {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    gap: 1%;
+}
+
+.songItem {
+    width: 90%;
+    border: 2px solid #00d856;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    padding: 1% 2%;
+}
+
+.playCircle {
+    width: 26px;
+    height: 26px;
+    fill: white;
+}
+
+.playCircle:hover{
+    fill: #5ed28c;
+    cursor: pointer;
+}
+
+.songItem h2 {
+    font-size: 1.6rem;
 }
 
 .bottom {
@@ -84,6 +116,19 @@ nav ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+p {
+    color: white;
+    font-size: 2rem;
+}
+
+.sliderDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    gap: 1%;
 }
 
 #songProgressBar {
@@ -112,26 +157,40 @@ nav ul li {
     fill: #5ed28c;
 }
 
-@media screen and (max-width: 817px) {
-    html {
-        font-size: 50%;
+@media screen and (max-width: 1400px) {
+    .songDiv {
+        width: 100%;
     }
 
-    .container{
-        width: 90%;
+    .songList {
+        width: 95%;
     }
+}
 
+@media screen and (max-width: 1100px) {
     .songBanner {
         display: none;
     }
 
-    .songList {
-        width: 100%;
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    html {
+        font-size: 54%;
+    }
+}
+
+@media screen and (max-width: 817px) {
+    html {
+        font-size: 50%;
     }
 }
 
 @media screen and (max-width: 450px) {
-    html{
+    html {
         font-size: 40%;
     }
 }
