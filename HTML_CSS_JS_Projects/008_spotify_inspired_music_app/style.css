@@ -56,11 +56,20 @@ nav img {
 }
 
 .songBanner {
-    width: 40%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#musicWave{
+    width: 80%;
+    opacity: 0;
+    transition: 1s linear;
 }
 
 .songDiv {
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,6 +127,11 @@ nav img {
     align-items: center;
 }
 
+#songName{
+    color: white;
+    font-size: 2rem;
+}
+
 p {
     color: white;
     font-size: 2rem;
@@ -137,12 +151,12 @@ p {
     margin-top: 1.2rem;
 }
 
-.iconsDiv {
+#iconsDiv {
     display: flex;
     margin-top: 1.2rem;
 }
 
-.iconsDiv svg {
+#iconsDiv svg {
     width: 1.8rem;
     fill: white;
     margin: 0 1.8rem;
