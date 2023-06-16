@@ -162,9 +162,6 @@ p {
     margin: 0 1.8rem;
 }
 
-#play-svg {
-    width: 2.8rem;
-}
 
 .iconsDiv svg:hover {
     cursor: pointer;
