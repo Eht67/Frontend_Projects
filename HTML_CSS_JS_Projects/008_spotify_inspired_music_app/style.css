@@ -149,6 +149,7 @@ p {
     width: 85%;
     accent-color: #00d856;
     margin-top: 1.2rem;
+    cursor: pointer;
 }
 
 #iconsDiv {
@@ -156,14 +157,17 @@ p {
     margin-top: 1.2rem;
 }
 
-#iconsDiv svg {
+.bottom-icons {
     width: 1.8rem;
     fill: white;
     margin: 0 1.8rem;
 }
 
+#masterPlay{
+    width: 2.7rem;
+}
 
-.iconsDiv svg:hover {
+.bottom-icons:hover {
     cursor: pointer;
     fill: #5ed28c;
 }
