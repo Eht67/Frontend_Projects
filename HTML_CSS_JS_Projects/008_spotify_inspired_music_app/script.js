@@ -49,8 +49,8 @@ const isSongPlaying = [];
 for (let i = 0; i < songURLs.length; i++) {
   const song = new Audio();
   songs.push(song);
-  isSongPlaying.push(false);
   songs[i].src = songURLs[i];
+  isSongPlaying.push(false);
 }
 
 let current_song_pause_index = undefined;
@@ -64,8 +64,14 @@ for (let i = 0; i < playButtons.length; i++) {
       // Pause the song
       songs[i].pause();
       playButtons[i].innerHTML = play_circle_svg_path_string;
+
+      // update play/pause position
       isSongPlaying[i] = false;
+
+      // hide music wave
       musicWave.style.opacity = 0;
+
+      // store index and position of currently paused song
       current_song_pause_index = i;
       current_song_pause_position = songs[i].currentTime;
     } else {
@@ -73,7 +79,7 @@ for (let i = 0; i < playButtons.length; i++) {
       stopAllSongs();
 
       // retrive current pause position and index if exists, and set the songs current time accordingly so it does not always resume from the start
-      if (i == current_song_pause_index && current_song_pause_position != undefined){
+      if (i == current_song_pause_index && current_song_pause_position != undefined) {
         songs[i].currentTime = current_song_pause_position;
       }
 
@@ -84,9 +90,17 @@ for (let i = 0; i < playButtons.length; i++) {
         console.error('Error playing the song:', error);
       });
       isSongPlaying[i] = true;
+
+      // change the play icon with pause icon
       playButtons[i].innerHTML = pause_circle_svg_path_string;
+
+      // show the music wave
       musicWave.style.opacity = 1;
+
+      // add the song name to dom
       songNameContainer.innerHTML = songURLs[i].substring(6);
+
+      // add duration of current playing song to dom in minutes and seconds
       let song_minutes = Math.floor(songs[i].duration / 60);
       let song_seconds = Math.floor(songs[i].duration % 60);
       let song_minutes_formatted = song_minutes < 10 ? `0${song_minutes}` : song_minutes;
@@ -97,12 +111,13 @@ for (let i = 0; i < playButtons.length; i++) {
       songs[i].addEventListener('timeupdate', function () {
         let song_parts_per_million = (songs[i].currentTime / songs[i].duration) * 1000000;
         songProgressBar.value = song_parts_per_million;
+
+        // show songs current time in minutes and seconds in dom
         let current_song_minutes = Math.floor(songs[i].currentTime / 60);
         let current_song_seconds = Math.floor(songs[i].currentTime % 60);
         let current_song_minutes_formatted = current_song_minutes < 10 ? `0${current_song_minutes}` : current_song_minutes;
         let current_song_seconds_formated = current_song_seconds < 10 ? `0${current_song_seconds}` : current_song_seconds;
         currentTimeTextBox.innerHTML = `${current_song_minutes_formatted}:${current_song_seconds_formated}`;
-
       });
     }
   });
