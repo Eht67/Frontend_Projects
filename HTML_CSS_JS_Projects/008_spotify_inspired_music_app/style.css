@@ -41,7 +41,7 @@ nav img {
 }
 
 .container {
-    height: calc(100svh - 2vh - 5rem - 11rem);
+    height: calc(100svh - 2vh - 5rem - 9rem);
     font-family: 'Tsukimi Rounded', sans-serif;
     display: flex;
     background-image: url(background.avif);
@@ -119,7 +119,7 @@ nav img {
     position: absolute;
     width: 100vw;
     bottom: 0;
-    height: 11rem;
+    height: 9rem;
     background-color: black;
     display: flex;
     flex-direction: column;
