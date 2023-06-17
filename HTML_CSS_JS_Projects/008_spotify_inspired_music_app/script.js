@@ -119,6 +119,11 @@ for (let i = 0; i < playButtons.length; i++) {
         let current_song_seconds_formated = current_song_seconds < 10 ? `0${current_song_seconds}` : current_song_seconds;
         currentTimeTextBox.innerHTML = `${current_song_minutes_formatted}:${current_song_seconds_formated}`;
       });
+
+      // add event listener to progress bar to change song playing position
+      songProgressBar.addEventListener('input', ()=>{
+        songs[i].currentTime = (songProgressBar.value/1000000) * songs[i].duration;
+      });
     }
   });
 }
