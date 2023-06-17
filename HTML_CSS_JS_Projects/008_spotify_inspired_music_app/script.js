@@ -56,8 +56,8 @@ for (let i = 0; i < songURLs.length; i++) {
   songs[i].src = songURLs[i];
 }
 
-// Define an array to store the current playback position of each song
-const songPlaybackPositions = [];
+let current_song_pause_index = undefined;
+let current_song_pause_position = undefined;
 
 // Add event listeners to each button
 for (let i = 0; i < playButtons.length; i++) {
@@ -69,19 +69,12 @@ for (let i = 0; i < playButtons.length; i++) {
       playButtons[i].innerHTML = play_circle_svg_path_string;
       isSongPlaying[i] = false;
       musicWave.style.opacity = 0;
+      current_song_pause_index = i;
+      current_song_pause_position = songs[i].currentTime;
+      console.log(`${current_song_pause_index};${current_song_pause_position}`)
     } else {
       // Stop any currently playing songs
       stopAllSongs();
-
-      if (songPlaybackPositions[i] !== undefined) {
-        songs[i].currentTime = songPlaybackPositions[i];
-      } else {
-        // Set the playback position to 0 if it's the first time playing
-        songPlaybackPositions[i] = 0;
-      }
-
-      // set cirrent position for pause
-      let current_song_pause_position =
 
         // Play the respective song
         songs[i].play().catch(error => {
@@ -101,7 +94,6 @@ for (let i = 0; i < playButtons.length; i++) {
       // update the progress bar acoording to song position
       songs[i].addEventListener('timeupdate', function () {
         let song_parts_per_million = (songs[i].currentTime / songs[i].duration) * 1000000;
-        console.log(song_parts_per_million);
         songProgressBar.value = song_parts_per_million;
         let current_song_minutes = Math.floor(songs[i].currentTime / 60);
         let current_song_seconds = Math.floor(songs[i].currentTime % 60);
