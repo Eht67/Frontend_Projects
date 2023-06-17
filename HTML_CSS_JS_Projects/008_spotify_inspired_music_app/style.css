@@ -65,7 +65,7 @@ nav img {
 #musicWave{
     width: 80%;
     opacity: 0;
-    transition: 1s linear;
+    transition: 0.2s linear;
 }
 
 .songDiv {
@@ -163,8 +163,10 @@ p {
     margin: 0 1.8rem;
 }
 
-#masterPlay{
+#masterPlay, 
+#masterPause{
     width: 2.7rem;
+    fill: white;
 }
 
 .bottom-icons:hover {
