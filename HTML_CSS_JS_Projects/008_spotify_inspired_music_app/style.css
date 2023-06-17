@@ -41,7 +41,7 @@ nav img {
 }
 
 .container {
-    height: calc(100vh - 2vh - 5rem - 11rem);
+    height: calc(100lvh - 2vh - 5rem - 11rem);
     font-family: 'Tsukimi Rounded', sans-serif;
     display: flex;
     background-image: url(background.avif);
@@ -125,6 +125,7 @@ nav img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 3%;
 }
 
 #songName{
