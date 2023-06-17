@@ -3,9 +3,6 @@ const play_circle_svg_path_string = `<path d="M464 256A208 208 0 1 0 48 256a208 
 
 const pause_circle_svg_path_string = `<path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm224-72V328c0 13.3-10.7 24-24 24s-24-10.7-24-24V184c0-13.3 10.7-24 24-24s24 10.7 24 24zm112 0V328c0 13.3-10.7 24-24 24s-24-10.7-24-24V184c0-13.3 10.7-24 24-24s24 10.7 24 24z"/>`
 
-let songIndex = 0;
-let songFile = new Audio('music/01 - As You Fade Away - NEFFEX.mp3');
-
 // fetching elements from DOM
 let masterPlay = document.getElementById('masterPlay');
 let musicWave = document.getElementById('musicWave');
@@ -71,16 +68,21 @@ for (let i = 0; i < playButtons.length; i++) {
       musicWave.style.opacity = 0;
       current_song_pause_index = i;
       current_song_pause_position = songs[i].currentTime;
-      console.log(`${current_song_pause_index};${current_song_pause_position}`)
     } else {
       // Stop any currently playing songs
       stopAllSongs();
 
-        // Play the respective song
-        songs[i].play().catch(error => {
-          // Handle the error, e.g., show an error message
-          console.error('Error playing the song:', error);
-        });
+      // retrive current pause position and index if exists, and set the songs current time accordingly so it does not always resume from the start
+      if (i == current_song_pause_index && current_song_pause_position != undefined){
+        songs[i].currentTime = current_song_pause_position;
+      }
+
+
+      // Play the respective song
+      songs[i].play().catch(error => {
+        // Handle the error, e.g., show an error message
+        console.error('Error playing the song:', error);
+      });
       isSongPlaying[i] = true;
       playButtons[i].innerHTML = pause_circle_svg_path_string;
       musicWave.style.opacity = 1;
