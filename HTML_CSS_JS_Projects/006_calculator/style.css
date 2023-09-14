@@ -39,7 +39,8 @@ body {
     background-color: rgba(123, 20, 207, 0.51);
     margin: 4%;
     border-radius: 12px;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .button-grid {

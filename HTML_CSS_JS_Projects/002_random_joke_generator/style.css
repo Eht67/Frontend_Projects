@@ -45,7 +45,7 @@ body {
     align-items: center;
     padding: 0 2%;
     text-align: center;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .button-section {
