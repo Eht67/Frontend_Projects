@@ -62,7 +62,7 @@ header {
 
 .hero-img img {
     transition: 0.3s ease-in-out;
-    border-radius: 300px;
+    border-radius: 50%;
 }
 
 .hero-img img:hover {
