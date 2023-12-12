@@ -157,7 +157,7 @@ hr {
     border: 3px solid transparent;
 }
 
-.other-heading{
+.other-heading {
     margin-top: 5rem;
 }
 
@@ -175,9 +175,10 @@ hr {
     justify-content: space-evenly;
 }
 
-.projects-card:hover{
+.projects-card:hover {
     border-radius: 0;
 }
+
 /* ehtsham hussain kamboh */
 
 .project {
@@ -191,7 +192,9 @@ hr {
     border: 1px solid transparent;
     display: grid;
     place-items: center;
-    background-size: contain;
+    background-size: 101%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .project:hover {
@@ -258,11 +261,11 @@ footer p {
     bottom: 22px;
 }
 
-#linkedin-icon{
+#linkedin-icon {
     fill: #1771e6;
 }
 
-#github-icon{
+#github-icon {
     fill: purple;
     width: 100px;
     height: 100px;
