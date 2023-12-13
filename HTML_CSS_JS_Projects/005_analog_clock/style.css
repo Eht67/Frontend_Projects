@@ -16,10 +16,8 @@ body {
 
 
 #clock-body {
-    width: 666px;
-    height: 666px;
-    max-width: 95vmin;
-    max-height: 95vmin;
+    width: 95vmin;
+    height: 95vmin;
     border-radius: 100%;
     background-color: rgba(183, 2, 249, 0.323);
     display: flex;
@@ -30,7 +28,7 @@ body {
 #clock {
     width: 90%;
     height: 90%;
-    background-image: url(clock.png);
+    background-image: url(clock.avif);
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;

@@ -63,7 +63,7 @@ html {
 }
 
 .hero-section {
-    background: linear-gradient(0deg, rgba(16, 18, 126, 0.425), rgba(255, 0, 150, 0.3)), url(images/hero-image.jpg);
+    background: linear-gradient(0deg, rgba(16, 18, 126, 0.425), rgba(255, 0, 150, 0.3)), url(images/hero-image.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -197,7 +197,7 @@ html {
     place-content: center;
     text-align: center;
     color: white;
-    background-image: url(images/entertainment.jpg);
+    background-image: url(images/entertainment.avif);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

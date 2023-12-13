@@ -14,7 +14,7 @@ html {
 body {
     height: 100vh;
     background-color: bisque;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 nav {
