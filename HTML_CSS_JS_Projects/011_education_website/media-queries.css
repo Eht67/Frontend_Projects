@@ -1,0 +1,188 @@
+/* media queries for responsiveness */
+@media (max-width:1460px) {
+
+    .services-carousal i,
+    .courses-carousal i {
+        border: 1px solid #999;
+    }
+
+    .services-carousal i.fa-angle-left,
+    .courses-carousal i.fa-angle-left {
+        left: 0.3%;
+    }
+
+    .services-carousal i.fa-angle-right,
+    .courses-carousal i.fa-angle-right {
+        right: 0.3%;
+    }
+}
+
+@media (max-width:1380px) {
+
+    .services-carousal i,
+    .courses-carousal i {
+        display: none;
+    }
+
+    .container {
+        width: 95vw;
+        margin: auto;
+    }
+
+    .meetings-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-left .form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-left .form textarea {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width:1040px) {
+    .facts .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .facts-right {
+        width: 100%;
+    }
+
+    .facts-right .video-link-card {
+        width: 70%;
+        margin: auto;
+    }
+
+    .contact .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 90%;
+    }
+}
+
+@media (max-width:920px) {
+    .contact-left .form {
+        grid-template-columns: minmax(100%, 1fr) ;
+    }
+
+    .contact-left .form textarea {
+        grid-column: span 1;
+    }
+
+    .apply-now .container {
+        grid-template-columns: 1fr;
+        column-gap: 7rem;
+    }
+
+}
+
+@media (max-width:900px) {    
+    .header-area{
+        padding-bottom: 0;
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+    .header-area .container{
+        align-items: normal;
+    }
+    
+    .services ul {
+        flex-direction: column;
+    }
+
+    section.meetings{
+        padding-top: 75rem;
+    }
+
+    .header-area .container {
+        flex-direction: column;
+        padding-bottom: 2rem;
+        align-items: flex-start;
+    }
+
+    .navlist li {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    #dropdown {
+        top: 10rem;
+    }
+
+    .courses ul {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+
+    .meetings-content{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .meetings-left{
+        width: 100%;
+        margin: 0;
+    }
+
+    .meetings-left .red-btn{
+        text-align: center;
+    }
+}
+
+@media (max-width:600px) {
+    .top-bar .container p {
+        display: none;
+    }
+
+    .top-bar .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-area{
+        padding: 1rem 0;
+    }
+
+    .header-area-scrolled{
+        padding: 0.5rem 0;
+    }
+
+    .courses ul {
+        grid-template-columns: 1fr;
+    }
+
+    .facts-left-down {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+
+    .facts-left-down .second-column {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:347px) {
+    #dropdown {
+        top: 17rem;
+    }
+}
+
+@media (max-width:347px){
+    html{
+        font-size: 45%;
+    }
+}
