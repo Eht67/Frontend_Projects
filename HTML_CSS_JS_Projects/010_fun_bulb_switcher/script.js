@@ -6,7 +6,7 @@ const bulbsOn = () => {
     for (let i = 0; i < bulbs.length; i++) {
         setTimeout(() => {
             bulbs[i].setAttribute('src', 'bulb-on.jpg');
-        }, i * 20);
+        }, i * 30);
     }
 }
 
@@ -14,7 +14,7 @@ const bulbsOff = () => {
     for (let i = 0; i < bulbs.length; i++) {
         setTimeout(() => {
             bulbs[i].setAttribute('src', 'bulb-off.jpg');
-        }, i * 20);
+        }, i * 30);
     }
 }
 
