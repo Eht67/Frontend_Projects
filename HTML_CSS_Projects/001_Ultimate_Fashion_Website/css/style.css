@@ -94,6 +94,13 @@ nav ul li a:hover {
     grid-template-columns: auto auto auto auto auto;
     box-shadow: 0 0 20px rgba(1, 0, 0, 0.3);
     overflow-x: scroll;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.card::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
 }
 
 /* ehtsham hussain kamboh */
