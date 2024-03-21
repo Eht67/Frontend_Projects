@@ -99,7 +99,11 @@
     }
 
     section.meetings {
-        padding-top: 75rem;
+        padding-top: 67rem;
+    }
+
+    #meetings h2{
+        padding-top: 10rem;
     }
 
     .header-area .container {
