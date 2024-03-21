@@ -24,11 +24,6 @@
         display: none;
     }
 
-    .container {
-        width: 95vw;
-        margin: auto;
-    }
-
     .meetings-right {
         width: 100%;
         justify-content: center;
@@ -156,10 +151,67 @@
 
     .header-area {
         padding: 1rem 0;
+        background-color: #fff;
+    }
+
+    .header-area .container {
+        flex-direction: row;
+        padding-bottom: 0;
+        align-items: center;
+    }
+
+    .logo{
+        margin: 1rem 0;
+        color: #000;
     }
 
     .header-area-scrolled {
         padding: 0.5rem 0;
+    }
+
+    .navlist{
+        display: none;
+    }
+    
+    .logo{
+        margin: 1rem 0;
+    }
+    .mobile-menu{
+        display: initial;
+    }
+
+    .mobile-menu i{
+        font-size: 3rem;
+        color: #000;
+        cursor: pointer;
+    }
+
+    .yellow-text{
+        color: #000 !important;
+    }
+
+    .mobile-menu ul{
+        position: absolute;
+        left: 5vw;
+        right: 5vw;
+        top: 8.1rem;
+        list-style: none;
+        background-color: #fff; 
+        text-align: center;
+        overflow: clip;
+        height: 0;
+        transition: all 0.2s ease-in;
+    }
+
+    .mobile-menu ul * {
+        color: #000;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .mobile-menu ul li{
+        padding: 2rem;
+        border-top: 1px solid #ddd;
     }
 
     .courses ul {
@@ -183,14 +235,13 @@
     }
 }
 
-@media (max-width:347px) {
+@media (max-width:420px) {
+    html {
+        font-size: 45%;
+    }
+
     #dropdown {
         top: 17rem;
     }
 }
 
-@media (max-width:347px) {
-    html {
-        font-size: 45%;
-    }
-}
