@@ -88,6 +88,7 @@ nav img {
     align-items: center;
     overflow-y: scroll;
     gap: 1%;
+    scrollbar-color: #00d856 #333;
 }
 
 .songItem {

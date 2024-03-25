@@ -11,11 +11,12 @@ document.onscroll = () => {
     }
 }
 
+// selecting mobile menu components
 let mobileMenuIcon = document.querySelector('#mobile-menu-icon');
 let mobileMenuContent = document.querySelector('#mobile-menu-content');
 let mobileMenuExpanded = false;
 
-
+// toggling mobile menu by clicking mobile menu icon
 mobileMenuIcon.addEventListener('click', () => {
     if (!mobileMenuExpanded) {
         mobileMenuContent.style.height = '43rem';
@@ -32,6 +33,7 @@ mobileMenuIcon.addEventListener('click', () => {
     }
 })
 
+// closing mobile menu when clicking on it
 mobileMenuContent.addEventListener('click', () => {
     mobileMenuContent.style.height = 0;
     mobileMenuIcon.classList.remove("fa-close");
