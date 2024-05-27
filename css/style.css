@@ -135,12 +135,6 @@ body {
     color: var(--golden);
 }
 
-hr {
-    height: 0.5rem;
-    color: var(--sec-color);
-    background-color: var(--sec-color);
-}
-
 .projects-container {
     padding: 7vh 0;
 }

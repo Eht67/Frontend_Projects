@@ -6,7 +6,8 @@ const bulbsOn = () => {
     for (let i = 0; i < bulbs.length; i++) {
         setTimeout(() => {
             bulbs[i].setAttribute('src', 'bulb-on.jpg');
-        }, i * 30);
+            bulbs[i].setAttribute('alt', 'bulb-on');
+        }, i * 100);
     }
 }
 
@@ -14,7 +15,8 @@ const bulbsOff = () => {
     for (let i = 0; i < bulbs.length; i++) {
         setTimeout(() => {
             bulbs[i].setAttribute('src', 'bulb-off.jpg');
-        }, i * 30);
+            bulbs[i].setAttribute('alt', 'bulb-off');
+        }, i * 100);
     }
 }
 
@@ -23,9 +25,11 @@ for (let i = 0; i < bulbs.length; i++) {
         let bulbState = bulbs[i].attributes.getNamedItem('src').value;
         if (bulbState === 'bulb-off.jpg') {
             bulbs[i].setAttribute('src', 'bulb-on.jpg');
+            bulbs[i].setAttribute('alt', 'bulb-on');
         }
         if (bulbState === 'bulb-on.jpg') {
             bulbs[i].setAttribute('src', 'bulb-off.jpg');
+            bulbs[i].setAttribute('alt', 'bulb-off');
         }
     });
 }

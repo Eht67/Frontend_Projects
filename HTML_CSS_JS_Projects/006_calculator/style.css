@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +32,6 @@ body {
     height: 20%;
     display: flex;
     justify-content: center;
-    overflow: scroll;
     align-items: center;
     color: white;
     background-color: rgba(123, 20, 207, 0.51);
@@ -41,6 +39,11 @@ body {
     border-radius: 12px;
     overflow-x: scroll;
     overflow-y: hidden;
+}
+
+#display::-webkit-scrollbar {
+    height: 0;
+    width: 0;
 }
 
 .button-grid {
