@@ -54,58 +54,6 @@
     }
 }
 
-@media (min-width:1000px) {
-    .project-name {
-        background-color: transparent;
-        color: transparent;
-    }
-
-    .project:hover .project-name {
-        background-color: red;
-        color: white;
-    }
-
-    #facebook-icon {
-        fill: white;
-    }
-
-    #instagram-icon {
-        fill: white;
-    }
-
-    #fiverr-icon {
-        fill: white;
-    }
-
-    #linkedin-icon {
-        fill: white;
-    }
-
-    #github-icon {
-        fill: white;
-    }
-
-    #facebook-icon:hover {
-        fill: #1771e6;
-    }
-
-    #instagram-icon:hover {
-        fill: #b420a1;
-    }
-
-    #fiverr-icon:hover {
-        fill: #1dbf73;
-    }
-
-    #linkedin-icon:hover {
-        fill: #1771e6;
-    }
-
-    #github-icon:hover {
-        fill: purple;
-    }
-}
-
 /* ehtsham hussain kamboh */
 
 @media (max-width:1120) {
@@ -180,5 +128,57 @@
     }
     .intro{
         margin: 0 3rem;
+    }
+}
+
+@media (hover: hover){
+    .project-name {
+        background-color: transparent;
+        color: transparent;
+    }
+
+    .project:hover .project-name {
+        background-color: red;
+        color: white;
+    }
+
+    #facebook-icon {
+        fill: white;
+    }
+
+    #instagram-icon {
+        fill: white;
+    }
+
+    #fiverr-icon {
+        fill: white;
+    }
+
+    #linkedin-icon {
+        fill: white;
+    }
+
+    #github-icon {
+        fill: white;
+    }
+
+    #facebook-icon:hover {
+        fill: #1771e6;
+    }
+
+    #instagram-icon:hover {
+        fill: #b420a1;
+    }
+
+    #fiverr-icon:hover {
+        fill: #1dbf73;
+    }
+
+    #linkedin-icon:hover {
+        fill: #1771e6;
+    }
+
+    #github-icon:hover {
+        fill: purple;
     }
 }
