@@ -177,7 +177,7 @@ body {
 
 .project {
     width: 320px;
-    height: 180px;
+    aspect-ratio: 16/9;
     margin: 1rem;
     border-radius: 1.2rem;
     background-color: var(--txt-color);
