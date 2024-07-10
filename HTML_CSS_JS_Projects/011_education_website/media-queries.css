@@ -27,8 +27,19 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .contact-left .form .subject{
+        grid-column: span 2;
+    }
+
     .contact-left .form textarea {
         grid-column: span 2;
+    }
+}
+
+@media (max-width:1240px){
+    .courses ul {
+        grid-auto-columns: calc((100%/3) - 8px);
+        row-gap: 2rem;
     }
 }
 
@@ -47,6 +58,10 @@
         margin: auto;
     }
 
+    .services ul {
+        grid-auto-columns: calc((100%/2) - 6px);
+    }
+
     .contact .container {
         flex-direction: column;
         gap: 2rem;
@@ -62,6 +77,10 @@
 @media (max-width:920px) {
     .contact-left .form {
         grid-template-columns: minmax(100%, 1fr);
+    }
+
+    .contact-left .form .subject{
+        grid-column: span 1;
     }
 
     .contact-left .form textarea {
@@ -116,8 +135,7 @@
     }
 
     .courses ul {
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 2rem;
+        grid-auto-columns: calc((100%/2) - 7px);
     }
 
     .meetings-content {
@@ -139,6 +157,14 @@
 @media (max-width:600px) {
     .top-bar .container p {
         display: none;
+    }
+
+    .services ul {
+        grid-auto-columns: 100%;
+    }
+
+    .courses ul {
+        grid-auto-columns: 100%;
     }
 
     .top-bar .container {
@@ -210,10 +236,6 @@
     .mobile-menu ul li{
         padding: 2rem;
         border-top: 1px solid #ddd;
-    }
-
-    .courses ul {
-        grid-template-columns: 1fr;
     }
 
     .facts-left-down {

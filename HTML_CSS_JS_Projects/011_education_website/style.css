@@ -46,6 +46,14 @@ html {
 	scroll-behavior: smooth;
 }
 
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+
+    &>* {
+        scroll-snap-align: start;
+    }
+}
+
 .container {
 	max-width: 132rem;
 	width: 93vw;
@@ -123,6 +131,10 @@ ul{
 
 		&::-webkit-scrollbar {
 			display: none;
+		}
+
+		&>*{
+			height: 100%;
 		}
 	}
 }
@@ -831,6 +843,10 @@ section.facts {
 	outline: none;
 	padding: 1rem 1.5rem;
 	border-radius: 2rem;
+}
+
+.contact-left .form .subject{
+	grid-column: span 3;
 }
 
 .contact-left .form textarea {
