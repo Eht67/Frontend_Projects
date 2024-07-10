@@ -664,6 +664,7 @@ section.meetings {
 	padding: 2.5rem;
 	font-size: 1.8rem;
 	color: #1f272b;
+	height: 11ch;
 	text-align: center;
 	border-bottom: 1px solid #eee;
 	font-weight: 500;
