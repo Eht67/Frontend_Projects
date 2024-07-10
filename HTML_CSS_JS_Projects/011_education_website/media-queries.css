@@ -1,29 +1,23 @@
 /* media queries for responsiveness */
 @media (max-width:1460px) {
 
-    .services-carousal i,
-    .courses-carousal i {
+    .services-carousel i,
+    .courses-carousel i {
         border: 1px solid #999;
     }
 
-    .services-carousal i.fa-angle-left,
-    .courses-carousal i.fa-angle-left {
+    .services-carousel i.fa-angle-left,
+    .courses-carousel i.fa-angle-left {
         left: 0.3%;
     }
 
-    .services-carousal i.fa-angle-right,
-    .courses-carousal i.fa-angle-right {
+    .services-carousel i.fa-angle-right,
+    .courses-carousel i.fa-angle-right {
         right: 0.3%;
     }
 }
 
 @media (max-width:1380px) {
-
-    .services-carousal i,
-    .courses-carousal i {
-        display: none;
-    }
-
     .meetings-right {
         width: 100%;
         justify-content: center;
