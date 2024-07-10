@@ -111,14 +111,6 @@
         flex-direction: column;
     }
 
-    section.meetings {
-        padding-top: 67rem;
-    }
-
-    #meetings h2{
-        padding-top: 10rem;
-    }
-
     .header-area .container {
         flex-direction: column;
         padding-bottom: 2rem;
@@ -218,7 +210,7 @@
         position: absolute;
         left: 5vw;
         right: 5vw;
-        top: 8.1rem;
+        top: 9rem;
         list-style: none;
         background-color: #fff; 
         text-align: center;
@@ -265,3 +257,8 @@
     }
 }
 
+@media (max-width:360px){
+    #meetings h2{
+        padding-top: 2rem;
+    }
+}
