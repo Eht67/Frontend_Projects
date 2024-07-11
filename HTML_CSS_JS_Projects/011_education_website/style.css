@@ -135,6 +135,14 @@ ul{
 	}
 }
 
+.services-grid {
+	grid-auto-columns: calc((100%/3) - 8px);
+}
+
+.courses-grid {
+	grid-auto-columns: calc((100%/4) - 9px);
+}
+
 .top-bar {
 	background-color: #1f272b;
 	color: white;
@@ -356,10 +364,6 @@ ul{
 	position: absolute;
 	margin-top: -13rem;
 	width: 100%;
-}
-
-.services ul {
-	grid-auto-columns: calc((100%/3) - 8px);
 }
 
 .services .card {
@@ -642,10 +646,6 @@ section.meetings {
 	background-size: cover;
 	padding-top: 14rem;
 	padding-bottom: 13rem;
-}
-
-.courses ul {
-	grid-auto-columns: calc((100%/4) - 9px);
 }
 
 .courses-carousel .card img {
