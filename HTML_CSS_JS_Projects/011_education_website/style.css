@@ -48,6 +48,10 @@ html {
 
 .snaps-inline {
     scroll-snap-type: inline mandatory;
+
+    &>* {
+        scroll-snap-align: start;
+    }
 }
 
 .container {
@@ -127,10 +131,6 @@ ul{
 
 		&::-webkit-scrollbar {
 			display: none;
-		}
-
-		&>*{
-			height: 100%;
 		}
 	}
 }
