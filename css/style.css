@@ -161,10 +161,10 @@ body {
     margin: 4vh auto 0 auto;
     padding: 1rem;
     border-radius: 1.2rem;
-    border: 2px solid transparent;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    transition: 0.2s ease-in;
 }
 
 .projects-card:hover {
