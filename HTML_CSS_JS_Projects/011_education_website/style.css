@@ -842,10 +842,6 @@ section.facts {
 	border-radius: 2rem;
 }
 
-.contact-left .form .subject{
-	grid-column: span 3;
-}
-
 .contact-left .form textarea {
 	grid-column: span 3;
 	min-height: 14rem;
