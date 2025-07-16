@@ -1,0 +1,402 @@
+@media (max-width: 1300px) {
+    @keyframes circle-rotation {
+        0% {
+            transform: rotate(45deg) translate(var(--_rotation-distance));
+        }
+
+        20% {
+            transform: rotate(28deg) translate(var(--_rotation-distance));
+            animation-play-state: paused;
+            animation-delay: 1.5s;
+        }
+
+        40% {
+            transform: rotate(0deg) translate(var(--_rotation-distance));
+            animation-play-state: paused;
+            animation-delay: 1.5s;
+        }
+
+        60% {
+            transform: rotate(-25deg) translate(var(--_rotation-distance));
+            animation-play-state: paused;
+            animation-delay: 1.5s;
+        }
+
+        80% {
+            transform: rotate(-46deg) translate(var(--_rotation-distance));
+            animation-play-state: paused;
+            animation-delay: 1.5s;
+        }
+
+        100% {
+            transform: rotate(-315deg) translate(var(--_rotation-distance));
+            animation-play-state: paused;
+            animation-delay: 1.5s;
+        }
+
+    }
+
+    .roadmap-section .ring-div {
+        margin-inline: initial;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .roadmap-section .ring-div .external-content.n2 {
+        top: 17%;
+        left: -40%;
+    }
+
+    .roadmap-section .ring-div .external-content.n3 {
+        top: 42%;
+        left: -63%;
+    }
+
+    .roadmap-section .ring-div .external-content.n4 {
+        top: 69%;
+        left: -48%;
+    }
+
+    .roadmap-section .ring-div .external-content.n5 {
+        top: 96%;
+        left: -34%;
+
+    }
+}
+
+@media (max-width: 1100px) {
+    footer .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 60px;
+    }
+
+    footer .footer-grid .info-col {
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 1020px) {
+    .hero-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sign-in {
+        display: initial;
+        color: #008657;
+    }
+
+    .sign-in.standalone {
+        display: none;
+    }
+
+    .derivatives-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .derivatives-card img {
+        width: 100%;
+    }
+
+    .features-grid {
+        grid-auto-columns: calc((100%/2) + 1px);
+    }
+
+    .roadmap-section {
+        padding-bottom: 900px;
+    }
+
+    .roadmap-section .ring-div {
+        position: absolute !important;
+        right: -335px;
+    }
+
+    .roadmap-section .ring-div .inner-content {
+        position: absolute;
+        bottom: -44%;
+        left: -70%;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        overflow-x: clip;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .navlist {
+        position: absolute;
+        z-index: 5;
+        top: 80px;
+        right: -220px;
+        width: 200px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #000;
+        background-color: #dcffe5;
+        display: grid;
+        padding: 0;
+        border-radius: 12px;
+        gap: 0;
+        transition: 0.3s linear;
+    }
+
+    .navlist.is-opened {
+        right: 20px;
+    }
+
+    .navlist li:hover {
+        color: initial;
+    }
+
+    .navlist>* {
+        padding: 24px 40px;
+        display: block;
+    }
+
+    .navlist>*:not(:first-child) {
+        border-top: 1px solid #008657;
+    }
+}
+
+@media (max-width: 800px) {
+    .roadmap-section .ring-div {
+        right: -420px;
+    }
+}
+
+@media (max-width: 700px) {
+    .derivatives-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: fit-content;
+        margin-inline: auto;
+        width: calc(100vw - 30px);
+    }
+
+    .features-grid {
+        grid-auto-columns: calc(100% + 1px);
+    }
+
+    .roadmap-section .ring-div {
+        right: -464px;
+    }
+
+    .faq-section .container {
+        padding: 60px 0;
+    }
+
+    footer .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+
+    footer .footer-grid .info-col,
+    footer .footer-grid .contact-info {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width:650px) {
+    .roadmap-section .ring-div {
+        right: -495px;
+    }
+}
+
+@media (max-width:600px) {
+    .roadmap-section .ring-div {
+        right: -516px;
+    }
+}
+
+@media (max-width:550px) {
+    .roadmap-section .ring-div .inner-content {
+        left: -50%;
+    }
+
+    .roadmap-section .ring-div .inner-content .heading {
+        font-size: 26px;
+    }
+
+    .roadmap-section .ring-div .inner-content .content {
+        font-size: 16px;
+    }
+
+    .roadmap-section .ring-div .external-content {
+        font-size: 18px;
+    }
+
+    .roadmap-section .ring-div .external-content.n1 {
+        left: -12%;
+    }
+
+    .roadmap-section .ring-div .external-content.n2 {
+        left: -30%;
+    }
+
+    .roadmap-section .ring-div .external-content.n3 {
+        left: -53%;
+    }
+
+    .roadmap-section .ring-div .external-content.n4 {
+        left: -38%;
+    }
+
+    .roadmap-section .ring-div .external-content.n5 {
+        left: -24%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    section:not(.hero-section):not(.horizontal-scroller-section) {
+        padding-top: 60px;
+        margin-top: 60px;
+    }
+
+    section:not(.hero-section):not(.horizontal-scroller-section):not(.faq-section)::before{
+        display: none;
+    }
+
+    .derivatives-card {
+        gap: 20px;
+    }
+
+    .start-trading-btn {
+        font-size: 16px;
+        padding-inline: 3px;
+    }
+
+    .derivatives-card-content .features li::before {
+        margin-top: 0;
+    }
+
+    .derivatives-card {
+        padding: 25px 45px;
+    }
+
+    .derivatives-card .number {
+        display: none;
+    }
+
+    .faq-section .container {
+        min-width: 100vw;
+        border-radius: 0;
+    }
+
+    .faq-section .faq .question .faq-icon .line {
+        --_size-controller: 2px;
+    }
+
+    footer {
+        margin-top: 80px;
+    }
+
+    footer .footer-grid {
+        padding-block: 50px;
+    }
+
+    footer .footer-grid .info-col .info {
+        margin-top: 22px;
+    }
+
+    footer .footer-grid div p.email {
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .roadmap-section .ring-div {
+        right: -555px;
+    }
+}
+
+@media (max-width: 400px) {
+    .roadmap-section .ring-div {
+        right: -580px;
+    }
+
+    @keyframes circle-rotation {
+        0% {
+            transform: rotate(37deg) translate(var(--_rotation-distance));
+        }
+
+        20% {
+            transform: rotate(20deg) translate(var(--_rotation-distance));
+            animation-play-state: paused;
+            animation-delay: 1.5s;
+        }
+
+        40% {
+            transform: rotate(0deg) translate(var(--_rotation-distance));
+            animation-play-state: paused;
+            animation-delay: 1.5s;
+        }
+
+        60% {
+            transform: rotate(-20deg) translate(var(--_rotation-distance));
+            animation-play-state: paused;
+            animation-delay: 1.5s;
+        }
+
+        80% {
+            transform: rotate(-35deg) translate(var(--_rotation-distance));
+            animation-play-state: paused;
+            animation-delay: 1.5s;
+        }
+
+        100% {
+            transform: rotate(-323deg) translate(var(--_rotation-distance));
+            animation-play-state: paused;
+            animation-delay: 1.5s;
+        }
+
+    }
+
+    .roadmap-section .ring-div {
+        margin-inline: initial;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .roadmap-section .ring-div .external-content.n1 {
+        top: -2%;
+        left: -22%;
+    }
+
+    .roadmap-section .ring-div .external-content.n2 {
+        top: 21%;
+        left: -32%;
+    }
+
+    .roadmap-section .ring-div .external-content.n3 {
+        top: 40%;
+        left: -46%;
+    }
+
+    .roadmap-section .ring-div .external-content.n3 .bottom {
+        max-width: 20ch;
+    }
+
+    .roadmap-section .ring-div .external-content.n4 {
+        top: 66%;
+        left: -41%;
+    }
+
+    .roadmap-section .ring-div .external-content.n5 {
+        top: 92%;
+        left: -34%;
+    }
+
+    .roadmap-section .ring-div .inner-content {
+        left: -45%;
+    }
+}

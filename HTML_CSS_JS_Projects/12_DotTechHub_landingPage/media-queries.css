@@ -1,0 +1,397 @@
+/* media queries */
+@media (max-height: 930px) and (max-width: 700px) {
+    section.hero-section {
+        .content {
+            padding-bottom: 110px;
+            min-height: calc(100svh - 113px - 110px);
+        }
+    }
+}
+
+/* for devices that can hover */
+@media (hover) {
+    section.hero-section{
+        .header{
+            .navlist{
+                li{
+                    &:hover {
+                        color: #fcb866;
+                        cursor: pointer;
+                        box-shadow: 3px 4px;
+                        transform: translateY(-4px);
+                    }
+                }
+            }
+        }
+    }
+
+    section.team-section {
+        .carousel {
+            .team-grid {
+                .team-card {
+                    overflow: hidden;
+
+                    &:hover {
+                        animation: show-overflow 1s forwards;
+
+                        .card-data {
+                            animation: show-data 1s forwards;
+                        }
+                    }
+
+                    &:not(:hover) {
+                        animation: remove-overflow 1s forwards;
+
+                        .card-data {
+                            animation: remove-data 1s forwards;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (width < 1100px) {
+    section.courses-section {
+        .courses-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    section.team-section {
+        .carousel {
+            .team-grid {
+                grid-auto-columns: calc((100%/3) - 8px);
+            }
+        }
+    }
+
+}
+
+@media (width < 940px) {
+    section.hero-section {
+        .header {
+            img.logo {
+                width: 150px;
+            }
+        }
+
+        .content {
+            min-height: calc(100vh - 90px);
+
+            .left {
+                h1 {
+                    font-size: 43px;
+                }
+
+                .btn-div {
+                    .btn {
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.contact-section {
+        .form {
+            .form-grid {
+                grid-template-columns: repeat(2, 1fr);
+
+                input[placeholder=Subject],
+                textarea {
+                    grid-column: span 2;
+                }
+            }
+        }
+    }
+}
+
+@media (width < 820px) {
+    section.hero-section {
+        .header {
+            .hamburger {
+                display: block;
+            }
+
+            .navlist {
+                position: absolute;
+                right: -180px;
+                top: 42%;
+                flex-direction: column;
+                width: 160px;
+                text-align: center;
+                transition: 0.2s ease-in;
+
+                li {
+                    background-color: #1f0fa3;
+                    border: 1px solid;
+                    box-shadow: 2px 3px #fcb866;
+
+                    &:hover {
+                        transform: none;
+                    }
+                }
+
+            }
+
+            &.scrolled {
+                .navlist{
+                    top: 35%;
+                }
+            }
+        }
+    }
+
+    section.why-section {
+        .why-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    section.courses-section {
+        .courses-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    section.locations-section {
+        .locations-grid {
+            iframe {
+                aspect-ratio: 1;
+            }
+        }
+    }
+
+    section.team-section {
+        .carousel {
+            .team-grid {
+                grid-auto-columns: calc((100%/2) - 6px);
+            }
+        }
+    }
+}
+
+@media (width < 700px) {
+    section:not(.hero-section) {
+        padding-block: 90px;
+
+        h1 {
+            font-size: 24px;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        p.small-heading {
+            font-size: 18px;
+        }
+
+        p.title {
+            font-size: 22px !important;
+        }
+
+        p.description {
+            font-size: 14px !important;
+        }
+    }
+
+    section.hero-section {
+        .header {
+            img.logo {
+                width: 120px;
+            }
+
+            &.scrolled {
+                img.logo {
+                    width: 120px;
+                }
+            }
+        }
+
+        .content {
+            min-height: 80vh;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            transform: translateY(10%);
+
+            .left {
+                text-align: center;
+
+                h1 {
+                    width: 19ch;
+                    margin-inline: auto;
+                }
+
+                .btn-div {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    section.locations-section {
+        .locations-grid {
+            p.city-name {
+                font-size: 24px;
+            }
+        }
+    }
+
+    section.team-section {
+        padding-bottom: calc(90px - 32px);
+    }
+
+    section.contact-section {
+        .form {
+            .form-grid {
+                grid-template-columns: 1fr;
+
+                input[placeholder=Subject],
+                textarea {
+                    grid-column: span 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    section.why-section {
+        .why-grid {
+            .why-card {
+                .why-card-icon-div {
+                    .why-card-icon {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    section.hero-section {
+        .content {
+            .left {
+                h1 {
+                    font-size: 30px;
+                }
+
+                .btn {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    section.courses-section {
+        .courses-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    section.team-section {
+        .carousel {
+            .team-grid {
+                grid-auto-columns: calc((100%));
+            }
+        }
+    }
+
+    section.contact-section {
+        .form {
+            .form-grid {
+                grid-template-columns: 100%;
+
+                input,
+                textarea {
+                    font-size: 14px;
+                }
+            }
+
+            .send-btn {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 364px) {
+    :root {
+        --menu-toggler-distane: -114px;
+    }
+
+    section:not(.hero-section) {
+        h1 {
+            font-size: 20px;
+            padding: 8px 16px;
+        }
+
+        p.small-heading {
+            font-size: 16px;
+        }
+
+        p.title {
+            font-size: 18px !important;
+        }
+
+        p.description {
+            font-size: 12px !important;
+        }
+    }
+
+    section.hero-section {
+        .header {
+            .navlist {
+                width: fit-content;
+            }
+        }
+
+        .content {
+            .left {
+                h1 {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+    section.why-section {
+        .why-grid {
+            .why-card {
+                flex-direction: column;
+                align-items: center;
+                padding: 14px;
+
+                .why-card-icon {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    section.locations-section {
+        .locations-grid {
+            p.city-name {
+                font-size: 18px;
+            }
+        }
+    }
+
+    section.contact-section {
+        .find-us {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 315px) {
+    .hamburger.is-active {
+        background-color: black;
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+}

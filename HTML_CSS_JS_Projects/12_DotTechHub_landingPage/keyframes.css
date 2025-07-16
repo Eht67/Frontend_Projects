@@ -1,0 +1,75 @@
+/* keyframes */
+@keyframes fade-in-top {
+  from {
+    transform: translateY(-100%);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-out {
+  from {
+    opacity: 0.5;
+    scale: 0.85;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes show-data {
+  0% {
+    bottom: -73px;
+    background-color: rgb(24 22 193 / 20%);
+  }
+
+  50% {
+    bottom: 40px;
+    background-color: rgb(24 22 193 / 40%);
+  }
+
+  100% {
+    bottom: -18px;
+    background-color: rgb(24 22 193 / 40%);
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    bottom: -18px;
+    background-color: rgb(24 22 193 / 40%);
+  }
+
+  50% {
+    bottom: 40px;
+    background-color: rgb(24 22 193 / 20%);
+  }
+
+  100% {
+    bottom: -73px;
+    background-color: rgb(24 22 193 / 20%);
+  }
+}
+
+@keyframes show-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+
+  50% {
+    overflow: hidden;
+  }
+}
